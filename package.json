@@ -25,9 +25,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     
-   
-    "predploy":"npm run build",
-    "deploy":"gh-pages -d build"
+    "deploy":"npm run build && gh-pages -d build"
   },
   "homepage": "https://belforto.github.io/react-redux",
   "browserslist": {
