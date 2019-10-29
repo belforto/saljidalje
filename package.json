@@ -4,7 +4,7 @@
   "description": "A todo list app with React-Redux (with normalized store shape).",
   "keywords": [],
   "main": "src/index.js",
-  "homepage": "https://github.com/belforto/react-redux",
+  "homepage": "https://belforto.github.io/react-redux",
   "dependencies": {
     "classnames": "2.2.6",
     "gh-pages": "^2.1.1",
@@ -25,6 +25,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "predploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "browserslist": {
