@@ -42,7 +42,7 @@ class ArticlesDynamic extends React.Component {
           //on path all return all article titles
           if (id === "all") {
             var imurl = "https://unsplash.it/" + Math.floor((Math.random() * 500) + 400)
-            return <div key={i} ><Link style={{ color: '#FFF' }} key={i} to={"/articles/" + article.path}><img src={imurl} alt="Random Unsplash"></img><h1 key={i} className="article-title">{article.title}</h1> <p className="article-meta">Written by {article.author}</p></Link></div>
+            return <div key={i} ><Link style={{ color: '#000000' }} key={i} to={"/articles/" + article.path}><img src={imurl} alt="Random Unsplash"></img><h1 key={i} className="article-title">{article.title}</h1> <p className="article-meta">Written by {article.author}</p></Link></div>
           }
           //return particular article based on path {id}
           else if (article.path === id) {
@@ -52,7 +52,7 @@ class ArticlesDynamic extends React.Component {
               <p className="article-meta">at {article.date}</p>
               <p dangerouslySetInnerHTML={{ __html: article.article }} ></p>
               <div className="row">
-    <button><Link style={{ color: '#FFF' }} to={"/articles/all"}><div>Read More</div> </Link></button>
+    <button><Link style={{ color: '#000000' }} to={"/articles/all"}><div>Read More</div> </Link></button>
   </div>
             </article>
           }
