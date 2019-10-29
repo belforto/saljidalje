@@ -1,0 +1,41 @@
+{
+  "name": "todoapp-with-redux-and-normalized-store",
+  "version": "1.0.0",
+  "description": "A todo list app with React-Redux (with normalized store shape).",
+  "keywords": [],
+  "main": "src/index.js",
+  "homepage": "https://github.com/belforto/react-redux",
+  "dependencies": {
+    "classnames": "2.2.6",
+    "react": "16.11.0",
+    "react-animated-css": "^1.2.1",
+    "react-autosuggest": "^9.4.3",
+    "react-content-loader": "^4.3.2",
+    "react-dom": "16.11.0",
+    "react-redux": "7.1.1",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.2.0",
+    "redux": "4.0.4",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
