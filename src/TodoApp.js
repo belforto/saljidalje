@@ -22,9 +22,9 @@ export default function TodoApp() {
       
 
         <Switch>
-          <Route path="/" exact component={AddTodo} />
-          <Route path="/test" component={TestComponent} />
-          <Route path="/articles/:id" component={ArticlesDynamic} />
+          <Route path={process.env.PUBLIC_URL+"/"} exact component={AddTodo} />
+          <Route path={process.env.PUBLIC_URL+"/test"} component={TestComponent} />
+          <Route path={process.env.PUBLIC_URL+"/articles/:id"} component={ArticlesDynamic} />
 
         </Switch>
 
