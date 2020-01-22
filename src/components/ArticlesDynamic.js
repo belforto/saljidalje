@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { fetchArticles } from "../redux/actions";
 import { Link } from 'react-router-dom';
-
+import CommentBox from "./CommentBox";
 import Catalog from "./Catalog";
 
 class ArticlesDynamic extends React.Component {
@@ -54,7 +54,11 @@ class ArticlesDynamic extends React.Component {
               <div className="row">
     <button><Link style={{ color: '#000000' }} to={"/articles/all"}><div>Read More</div> </Link></button>
   </div>
+
+  <CommentBox comment={article.title+"********KOMENTAR"}/>
             </article>
+
+           
           }
 
         })}</div> : <h1>No Articles </h1>}
@@ -78,4 +82,5 @@ export default connect(
   mapStateToProps,
   { fetchArticles }
 )(ArticlesDynamic);
+
 

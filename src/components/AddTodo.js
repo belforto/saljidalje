@@ -7,6 +7,7 @@ import AutosuggestMovie from "./AutosuggestMovie";
 import TodoList from "./TodoList";
 import VisibilityFilters from "./VisibilityFilters";
 
+
 import { Animated } from "react-animated-css";
 
 class AddTodo extends React.Component {
@@ -37,6 +38,7 @@ class AddTodo extends React.Component {
 
 
       <div class="row flex-top">
+      
 
         <h1>My Movie Todo List</h1>
         <div class="sm-6 col">
