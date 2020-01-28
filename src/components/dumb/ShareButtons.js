@@ -30,7 +30,7 @@ class ShareButtons extends React.Component {
 
     componentDidMount(){
 
-        let imena=["Marko", "Darijan","Florijan", "Šime","Slavko","Tomo","Tomislav"];
+        let imena=["Marko", "Darijan","Florijan", "Šime","Slavko","Tomo","Tomislav","Ivana","Marija","Željka"];
         let randomIndex= Math.floor(Math.random()*imena.length);
         const SEC=1000;
         let vrijemePojaveToasta=Math.floor(Math.random() * 1000*SEC) + 10*SEC ;
