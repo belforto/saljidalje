@@ -27,7 +27,7 @@ class CommentBox extends React.Component {
   componentDidUpdate(){
 
 
-    console.log("kom se updetala------------")
+   // console.log("kom se updetala------------")
   }
 
   async componentDidMount() {
@@ -43,6 +43,7 @@ class CommentBox extends React.Component {
           <Comment
             author={comment.autor}
             body={comment.komentar}
+            date={comment.datum}
             key={Math.random()} />
         );
       }
@@ -51,7 +52,7 @@ class CommentBox extends React.Component {
     });
 
     this.setState({ comentsHTML: comentsHTML })
-    console.log("didmountsS", comentsHTML, this.state.brojKomentara)
+  //  console.log("didmountsS", comentsHTML, this.state.brojKomentara)
 
   }
 
@@ -101,7 +102,7 @@ class CommentBox extends React.Component {
      // datum:new Date().toDateString()
     };
    await this.setState({ comments: this.state.comments.concat([comment]) }); // *new array references help React stay fast, so concat works better than push here.
-    console.log("novikomentari",this.state.comments)
+   // console.log("novikomentari",this.state.comments)
     this.forceUpdate()
     toast("Tvoj Komentar Je Spremljen",{ type: toast.TYPE.SUCCESS, autoClose: 5000 })
     var formData = new FormData();
@@ -138,7 +139,7 @@ class CommentBox extends React.Component {
     await fetch('https://www.markwebkitchen.com/seo/komentari/komentari.json')
       .then(response => response.json())
       .then(comments => {
-        console.log("komentari spremni");
+      //  console.log("komentari spremni");
         this.setState({ comments: comments.svi, showComments: true, komentariSpremni: true });
          this.forceUpdate()
       }
@@ -191,7 +192,7 @@ class Comment extends React.Component {
   render() {
     return (
       <div className="comment">
-        <p className="comment-header">{this.props.author}</p>
+        <p className="comment-header  "><span class="badge success">{this.props.author}</span></p>
         <p className="comment-body">- {this.props.body}</p>
         <div className="comment-footer">
           <p>{this.props.date}</p>
