@@ -4,6 +4,7 @@ import { fetchArticles } from "../redux/actions";
 import { Link } from 'react-router-dom';
 import CommentBox from "./CommentBox";
 import Catalog from "./Catalog";
+import ShareButtons from "./dumb/ShareButtons";
 
 class ArticlesDynamic extends React.Component {
 
@@ -47,11 +48,16 @@ class ArticlesDynamic extends React.Component {
           //return particular article based on path {id}
           else if (article.path === id) {
             return <article className="article" key={i}>
+           
               <h1 className="article-title">{article.title}</h1>
+              < ShareButtons title={article.title}/>
               <p className="article-meta">Written by {article.author}</p>
               <p className="article-meta">at {article.date}</p>
               <p dangerouslySetInnerHTML={{ __html: article.article }} ></p>
+
+              < ShareButtons title={article.title}/>
               <div className="row">
+              
     <button><Link style={{ color: '#000000' }} to={"/articles/all"}><div>Read More</div> </Link></button>
   </div>
 
@@ -68,6 +74,8 @@ class ArticlesDynamic extends React.Component {
     );
   }
 }
+
+
 
 
 const mapStateToProps = (state) => ({

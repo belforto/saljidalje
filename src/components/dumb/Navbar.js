@@ -15,10 +15,10 @@ const Navbar = () => (
         <div className="collapsible-body">
             <ul className="inline">
                 <Link to="/test">
-                    <li>Test</li>
+                    <li>Home</li>
                 </Link>
                 <Link to="/articles/all">
-                    <li>articles</li>
+                    <li>Blog</li>
                 </Link>
 
 
