@@ -20,11 +20,13 @@
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "jest": "^25.1.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "jest",
     "deploy": "npm run build && gh-pages -d build"
   },
   "homepage": "https://belforto.github.io/react-redux",
