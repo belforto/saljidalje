@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2d2dd03d7f86a6bada0d93bcd44bbe09",
+    "revision": "dac8e56d82f285fb37c6cebc25e28882",
     "url": "/saljidalje/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/saljidalje/static/css/2.2508ce2e.chunk.css"
   },
   {
-    "revision": "4449d9a929ae909a5d75",
+    "revision": "eb488d028d87a8895f70",
     "url": "/saljidalje/static/css/main.5a1255fd.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/saljidalje/static/js/2.e3bacca9.chunk.js"
   },
   {
-    "revision": "4449d9a929ae909a5d75",
-    "url": "/saljidalje/static/js/main.ec28a436.chunk.js"
+    "revision": "eb488d028d87a8895f70",
+    "url": "/saljidalje/static/js/main.491285a6.chunk.js"
   },
   {
     "revision": "98401b44d1042f0ffae7",

@@ -98,8 +98,9 @@ body{
   
     .aa{
       
-      transform: scale(2.3);
+    /*  transform: scale(2.3);
       padding-top: 20px
+      */
       
     }
     }
