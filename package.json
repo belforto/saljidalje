@@ -35,7 +35,7 @@
     "test": "jest",
     "deploy": "npm run build && gh-pages -d build"
   },
-  "homepage": "https://belforto.github.io/saljidaljeapp",
+  "homepage": "https://belforto.github.io/saljidalje",
   "browserslist": {
     "production": [
       ">0.2%",
