@@ -1,36 +1,106 @@
-.todo-app {
-  font-family: sans-serif;
+.color1{
+  background-color:#5D6C89;
+}
+.color2{
+  background-color:#36D6E7;
+}
+.color3{
+  background-color:#FEB06A;
+}
+.color4{
+  background-color:#FBF6F3;
 }
 
-/** add todo **/
-.add-todo {
-  margin-left: 0.5rem;
+.bgrHero{
+  background: url('./components/dumb/wall.png')
+  no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
 }
 
-/** todo list **/
-.todo-list {
-  margin-top: 1rem;
-  text-align: left;
-  list-style: none;
+.horiz{
+  display: flex;
+  flex-direction: column;
 }
 
-/** todo item **/
-.todo-item {
-  font-family: monospace;
-  cursor: pointer;
-  line-height: 1.5;
-}
-.todo-item__text--completed {
-  text-decoration: line-through;
-  color: lightgray;
+body{
+  font-family: 'Quicksand', sans-serif;
 }
 
-/** visibility filters **/
-.filter {
-  padding: 0.3rem 0;
-  margin: 0 0.3rem;
-  cursor: pointer;
+
+
+.marginNarudzbe{
+  margin: 15px
 }
-.filter--active {
-  border-bottom: 1px solid black;
-}
+
+
+
+
+
+
+
+
+
+  .slide-container {
+    width: 100%;
+    margin: auto; }
+  
+  h3 {
+    text-align: center; }
+  
+  .each-slide > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    height: 300px;
+  }
+  
+  .each-slide span {
+    padding: 20px;
+    font-size: 20px;
+    background: #efefef;
+    text-align: center;
+  }
+  
+  .each-fade {
+    display: flex;
+  }
+  
+  .each-fade .image-container {
+    width: 75%;
+    overflow: hidden;
+  }
+  
+  .each-fade .image-container img {
+    width: 100%;
+  }
+  
+  .each-fade h2 {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background: #adceed;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .horiz{
+      display: flex;
+      flex-direction: row;
+    }
+    .odmakniodruba{
+      margin:7px
+    }
+  
+    .aa{
+      
+      transform: scale(2.3);
+      padding-top: 20px
+      
+    }
+    }
+  

@@ -4,18 +4,15 @@ import {
   LinkedinShareButton,
   WhatsappShareButton,
   PinterestShareButton,
-  VKShareButton,
-
+ 
   FacebookIcon,
   TwitterIcon,
   LinkedinIcon,
   WhatsappIcon,
   PinterestIcon,
-  VKIcon,
 } from "react-share";
 import React from "react";
 import { Passers } from "prop-passer";
-import SubShareCSS from "./SubShareCSS";
 import { ToastContainer, toast } from 'react-toastify';
 
 class ShareButtons extends React.Component {

@@ -1,5 +1,8 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import SubscriptionPopup from  './SubscriptionPopup';
+
+
 
 
 const Navbar = () => (
@@ -23,8 +26,14 @@ const Navbar = () => (
 
 
             </ul>
+           
+            <SubscriptionPopup/>
+           
         </div>
+       
     </nav>
+
+
 );
 
 // export default Todo;
