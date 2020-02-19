@@ -10,7 +10,7 @@ import "./styles.css";
 
 export default function SaljiDaljeApp() {
   return (
-    <Router basename="/">
+    <Router basename="/saljidalje">
       <div   >
         <br />
         <Switch>
