@@ -32,7 +32,7 @@ export default class ScreenDetaljiKupnje extends React.Component {
                 });
             }
                 .bind(this),
-            1000
+            500
         );
 
     }
@@ -87,7 +87,7 @@ export default class ScreenDetaljiKupnje extends React.Component {
 
                     }
                 </div>
-                <TestimonialComponent />
+                
                 <PreporukeComponent />
             </div>
 

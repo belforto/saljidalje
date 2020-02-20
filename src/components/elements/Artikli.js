@@ -7,6 +7,7 @@ import 'react-lazy-load-image-component/src/effects/opacity.css';
 
 import Catalog from "./Catalog";
 import { Link } from 'react-router-dom';
+import XLoacalStore from '../elements/XLoacalStore'
 
 
 import { Animated } from "react-animated-css";
@@ -33,53 +34,65 @@ class Artikli extends React.Component {
         .bind(this),
       1000
     );
+    console.log(this.props.artikli, "from fetch---------------");
+/*
+    setTimeout(
+      function () {
+        window.scrollTo(0,5622)
+      }
+        .bind(this),
+      2000
+    );
+
+   */
 
   }
 
+
+  saveScrollPosition(){
+    var yPosition=window.pageYOffset;
+    XLoacalStore.set("yPosition",yPosition)
+  }
+
   render() {
-
-
-
-
     return (
-
-
       <div>
-       
+
         {this.state.loading ? <Catalog /> :
-       
 
-          <section class="hero is-secondary is-medium  ">
+          <div class="box boxnoshadows">
+            <section class="hero is-secondary is-medium  ">
 
 
-            <div class="columns is-multiline is-mobile color4 ">
-              <div class="field column is-half-mobile is-one-quarter-widescreen  ">
-                <div class="control ">
-                  <div class="select is-primary is-right">
-                    <select>
-                      <option>Svi Artikli</option>
-                      <option>Samo odjeća</option>
-                      <option>Samo obuća</option>
-                    </select>
+              <div class="columns is-multiline is-mobile color4 ">
+                <div class="field column is-half-mobile is-one-quarter-widescreen  ">
+                  <div class="control ">
+                    <div class="select is-primary is-right">
+                      <select>
+                        <option>Svi Artikli</option>
+                        <option>Samo odjeća</option>
+                        <option>Samo obuća</option>
+                      </select>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div class="columns is-multiline is-mobile color4 is-centered">
+              <div class="columns is-multiline is-mobile color4 is-centered">
 
-              {
-                this.state.listaSlika.map((item, i) =>
-                  <div key={i} class="column is-half-mobile is-one-quarter-widescreen">  <Link to="/detalji/x"> <LazyLoadImage alt="bla" effect="opacity" src="https://i.picsum.photos/id/1/200/300.jpg" /></Link></div>
-                )
-              }
+                {
+                  this.props.artikli.map((item, i) =>
+                    <div key={i} class="column is-half-mobile is-one-quarter-widescreen">  <Link to="/detalji/x"> <LazyLoadImage alt="bla" effect="opacity" src="https://i.picsum.photos/id/1/200/300.jpg" onClick={(e) => this.saveScrollPosition(e)} /></Link></div>
+                  )
+                }
 
-            </div>
-
+              </div>
 
 
 
-          </section>
+
+            </section>
+          </div>
         }
       </div>
 

@@ -21,7 +21,7 @@ export default class ScreenNarudzba extends React.Component {
         super(props);
         const { imeArtikla, slika } = this.props.location.state
         this.state = {
-            
+
             loading: true,
             slika: slika,
             imeArtikla: imeArtikla,
@@ -43,6 +43,13 @@ export default class ScreenNarudzba extends React.Component {
     componentDidMount() {
         this.prePopulateMyForm();
         console.log(this.state)
+        setTimeout(
+            function () {
+              this.setState({ loading: false });
+            }
+              .bind(this),
+            300
+          );
     }
 
     toggleCheckBox(bool) {
@@ -73,7 +80,7 @@ export default class ScreenNarudzba extends React.Component {
         } else {
             this.setState({
                 saveMyData: false
-                
+
             })
         }
     }
@@ -93,6 +100,8 @@ export default class ScreenNarudzba extends React.Component {
 
         const handle = "sssss"//this.props.match.params
         return (
+<div>
+            {this.state.loading ? <Catalog /> :
             <div>
                 <div class="container box ">
 
@@ -236,7 +245,7 @@ export default class ScreenNarudzba extends React.Component {
 
 
 
-                        
+
 
 
 
@@ -251,7 +260,7 @@ export default class ScreenNarudzba extends React.Component {
                                     <div class="control">
 
                                         <Link to={{
-                                            pathname: '/thankyou/' ,
+                                            pathname: '/thankyou/',
                                             state: {
                                                 imeArtikla: "Majicasssss",
                                                 slika: this.state.imgSrc
@@ -276,6 +285,8 @@ export default class ScreenNarudzba extends React.Component {
                 </div>
 
             </div>
+    }
+    </div>
 
         );
     }

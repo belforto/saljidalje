@@ -10,23 +10,32 @@ import Artikli from "./Artikli";
 
 class PopisRobe extends React.Component {
 
+    constructor(props) {
+        super(props);
+        this.state = {
+            articleLoading:true,
+            apiResults:[]
+        };
+      }
+    
 
-    componentDidMount() {
+    async componentDidMount() {
         //redux action call
-        this.props.fetchArticles();
+       await this.props.fetchArticles();
+       // console.log(this.props.apiResults,"3333333333");
+        this.setState({articleLoading:this.props.articleLoading, apiResults:this.props.apiResults})
 
+        
+        
     }
 
     render() {
-
-
-
-
         return (
-
-            <Artikli />
-
-
+            <div>
+            {this.state.articleLoading?<div>load</div>:
+                <Artikli artikli={this.props.apiResults}/>
+            }
+            </div>
         );
     }
 }

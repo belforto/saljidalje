@@ -9,6 +9,7 @@ import SaljiDaljeApp from "./SaljiDaljeApp";
 const rootElement = document.getElementById("root");
 ReactDOM.render(
   <Provider store={store}  >
+  
     <SaljiDaljeApp />
   </Provider>,
   rootElement

@@ -43,7 +43,7 @@ const TestimonialComponent = () => (
                     <div class="divider is-centered"></div>
                     <br />
                     <br />
-                    <br /><br /><br /><br />
+                    
                 </div>
 
 
@@ -65,8 +65,7 @@ const TestimonialComponent = () => (
         </section>
 
 
-        <br /><br /><br /><br />
-        <br /><br /><br /><br />
+       
     </div>
 
 

@@ -27,7 +27,7 @@ const HeroComponent = () => (
           <div class="column ">
             <figure class="image is-square">
 
-              <img src="https://freesvg.org/img/Anonymous_Architetto_--_Vestido_da_donna.png" width="52" height="108" />
+              <img src="icon.png" style={{width: "105px", height:"auto"}}/>
             </figure>
 
 

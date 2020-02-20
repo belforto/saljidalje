@@ -14,7 +14,7 @@ export const articlesFetched = json => ({
 export function fetchArticles() {
   return function (dispatch) {
    // dispatch(requestPosts());
-    return fetch('https://www.markwebkitchen.com/seo/test.json')
+    return fetch('https://picsum.photos/v2/list')
       .then(
         response => response.json(),
         error => console.log('An error occurred.', error),
