@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/saljidalje/static/css/main.7fbec7d5.chunk.css",
-    "main.js": "/saljidalje/static/js/main.37c549e8.chunk.js",
-    "main.js.map": "/saljidalje/static/js/main.37c549e8.chunk.js.map",
+    "main.css": "/saljidalje/static/css/main.4d9c4131.chunk.css",
+    "main.js": "/saljidalje/static/js/main.fa67b0e0.chunk.js",
+    "main.js.map": "/saljidalje/static/js/main.fa67b0e0.chunk.js.map",
     "runtime-main.js": "/saljidalje/static/js/runtime-main.31119b1c.js",
     "runtime-main.js.map": "/saljidalje/static/js/runtime-main.31119b1c.js.map",
-    "static/css/2.2508ce2e.chunk.css": "/saljidalje/static/css/2.2508ce2e.chunk.css",
-    "static/js/2.163f4dd1.chunk.js": "/saljidalje/static/js/2.163f4dd1.chunk.js",
-    "static/js/2.163f4dd1.chunk.js.map": "/saljidalje/static/js/2.163f4dd1.chunk.js.map",
+    "static/css/2.492cf449.chunk.css": "/saljidalje/static/css/2.492cf449.chunk.css",
+    "static/js/2.6d4cedf0.chunk.js": "/saljidalje/static/js/2.6d4cedf0.chunk.js",
+    "static/js/2.6d4cedf0.chunk.js.map": "/saljidalje/static/js/2.6d4cedf0.chunk.js.map",
     "index.html": "/saljidalje/index.html",
-    "precache-manifest.82bf2780699a47f9e1e348b28daf8685.js": "/saljidalje/precache-manifest.82bf2780699a47f9e1e348b28daf8685.js",
+    "precache-manifest.9fb0a2b89bb713f5abcb23a6514b3323.js": "/saljidalje/precache-manifest.9fb0a2b89bb713f5abcb23a6514b3323.js",
     "service-worker.js": "/saljidalje/service-worker.js",
-    "static/css/2.2508ce2e.chunk.css.map": "/saljidalje/static/css/2.2508ce2e.chunk.css.map",
-    "static/css/main.7fbec7d5.chunk.css.map": "/saljidalje/static/css/main.7fbec7d5.chunk.css.map",
+    "static/css/2.492cf449.chunk.css.map": "/saljidalje/static/css/2.492cf449.chunk.css.map",
+    "static/css/main.4d9c4131.chunk.css.map": "/saljidalje/static/css/main.4d9c4131.chunk.css.map",
     "static/media/10.png": "/saljidalje/static/media/10.66a63c41.png",
     "static/media/12.png": "/saljidalje/static/media/12.b5ff3627.png",
     "static/media/13.png": "/saljidalje/static/media/13.6b37ab7c.png",
@@ -24,9 +24,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.31119b1c.js",
-    "static/css/2.2508ce2e.chunk.css",
-    "static/js/2.163f4dd1.chunk.js",
-    "static/css/main.7fbec7d5.chunk.css",
-    "static/js/main.37c549e8.chunk.js"
+    "static/css/2.492cf449.chunk.css",
+    "static/js/2.6d4cedf0.chunk.js",
+    "static/css/main.4d9c4131.chunk.css",
+    "static/js/main.fa67b0e0.chunk.js"
   ]
 }
