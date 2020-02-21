@@ -14,7 +14,7 @@ import PreporukeComponent from "../elements/PreporukeComponent"
 
 
 
-export default class ScreenDetaljiKupnje extends React.Component {
+export default class ScreenDetaljnoArtikl extends React.Component {
     constructor(props) {
         super(props);
         this.state = {

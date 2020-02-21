@@ -1,9 +1,10 @@
 import React from "react";
 import MainScreenSaljiDalje from "./components/MainScreenSaljiDalje";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import ScreenDetaljiKupnje from "./components/dumb/ScreenDetaljiKupnje";
+import ScreenDetaljnoArtikl from "./components/dumb/ScreenDetaljnoArtikl";
 import ScreenNarudzba from "./components/dumb/ScreenNarudzba";
 import ScreenThankYouPage from "./components/dumb/ScreenThankYouPage";
+import ScreenKategorije from "./components/dumb/ScreenKategorije";
 
 
 
@@ -18,7 +19,8 @@ export default function SaljiDaljeApp() {
         <br />
         <Switch>
           <Route path="/" exact component={MainScreenSaljiDalje} />
-          <Route path="/detalji/:id" component={ScreenDetaljiKupnje} />
+          <Route path="/detalji/:id" component={ScreenDetaljnoArtikl} />
+          <Route path="/category/:kategorija" component={ScreenKategorije} />
           <Route path="/order/" component={ScreenNarudzba} />
           <Route path="/thankyou/" component={ScreenThankYouPage} />
 

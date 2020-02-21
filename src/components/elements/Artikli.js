@@ -35,16 +35,7 @@ class Artikli extends React.Component {
       1000
     );
     console.log(this.props.artikli, "from fetch---------------");
-/*
-    setTimeout(
-      function () {
-        window.scrollTo(0,5622)
-      }
-        .bind(this),
-      2000
-    );
 
-   */
 
   }
 
@@ -82,7 +73,7 @@ class Artikli extends React.Component {
 
                 {
                   this.props.artikli.map((item, i) =>
-                    <div key={i} class="column is-half-mobile is-one-quarter-widescreen">  <Link to="/detalji/x"> <LazyLoadImage alt="bla" effect="opacity" src="https://i.picsum.photos/id/1/200/300.jpg" onClick={(e) => this.saveScrollPosition(e)} /></Link></div>
+                    <div key={i} class="column is-half-mobile is-one-quarter-widescreen">  <Link to={"/detalji/"+i}> <LazyLoadImage alt="bla" effect="opacity" src="https://i.picsum.photos/id/1/200/300.jpg" onClick={(e) => this.saveScrollPosition(e)} /></Link></div>
                   )
                 }
 
