@@ -18,8 +18,7 @@ export default class ScreenDetaljnoArtikl extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            input: "", loading: true,
-            listaSlika: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+             loading: true,
         };
     }
 
@@ -28,13 +27,13 @@ export default class ScreenDetaljnoArtikl extends React.Component {
             function () {
                 this.setState({
                     loading: false,
-                    imgSrc: 'https://i.picsum.photos/id/1/500/600.jpg'
+                    imgSrc: this.props.location.state.artikl.photoLinks[0]
                 });
             }
                 .bind(this),
             500
         );
-
+            console.log("abc ",this.props.location.state.artikl)
     }
 
     changeImage(e) {
@@ -63,7 +62,8 @@ export default class ScreenDetaljnoArtikl extends React.Component {
                                 <LazyLoadImage alt="bla" effect="opacity" src={this.state.imgSrc} />
                             </div>
                             <div class="column  ">
-                                <h1 class="title ">Majica</h1>
+                                <h1 class="title ">{this.props.location.state.artikl.naslov}</h1>
+                                <p >{this.props.location.state.artikl.opis}</p>
 
                                 <Link to={{
                                     pathname: '/order/' + { handle },

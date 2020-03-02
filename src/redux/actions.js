@@ -23,7 +23,7 @@ export const articlesFetched = json => ({
 export function fetchArticles() {
 
   return function (dispatch) {
-
+/*
      return fetch('https://picsum.photos/v2/list')
       .then(
         response => response.json(),
@@ -33,9 +33,9 @@ export function fetchArticles() {
         dispatch(articlesFetched(json));
       },
       );
-      
+      */
    
-   /* return fetch('https://webhooks.mongodb-stitch.com/api/client/v2.0/app/saljidaljeserver-krkzo/service/api/incoming_webhook/webhook0')
+    return fetch('https://webhooks.mongodb-stitch.com/api/client/v2.0/app/saljidaljeserver-krkzo/service/api/incoming_webhook/fetchAll')
       .then(
         response => response.json(),
         error => console.log('An error occurred.', error),
@@ -45,7 +45,7 @@ export function fetchArticles() {
         dispatch(articlesFetched(json));
       },
       );
-      */
+      
   };
 }
 

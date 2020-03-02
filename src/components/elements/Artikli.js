@@ -40,9 +40,9 @@ class Artikli extends React.Component {
   }
 
 
-  saveScrollPosition(){
-    var yPosition=window.pageYOffset;
-    XLoacalStore.set("yPosition",yPosition)
+  saveScrollPosition() {
+    var yPosition = window.pageYOffset;
+    XLoacalStore.set("yPosition", yPosition)
   }
 
   render() {
@@ -73,7 +73,16 @@ class Artikli extends React.Component {
 
                 {
                   this.props.artikli.map((item, i) =>
-                    <div key={i} class="column is-half-mobile is-one-quarter-widescreen">  <Link to={"/detalji/"+i}> <LazyLoadImage alt="bla" effect="opacity" src="https://i.picsum.photos/id/1/200/300.jpg" onClick={(e) => this.saveScrollPosition(e)} /></Link></div>
+                    <div key={i} class="column is-half-mobile is-one-quarter-widescreen">
+                      <Link to={{
+                        pathname: '/detalji/' + i,
+                        state: {
+                          artikl: item,
+                          
+                        }
+                      }}> <LazyLoadImage alt="bla" effect="opacity" src={item.photoLinks[0]} onClick={(e) => this.saveScrollPosition(e)} />
+                      </Link>
+                    </div>
                   )
                 }
 

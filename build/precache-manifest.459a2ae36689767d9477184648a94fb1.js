@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "817df4dfbc170fba53e6a62cf36ffed8",
+    "revision": "63ae080863789e4a893d69fc2c590fa9",
     "url": "/saljidalje/index.html"
   },
   {
-    "revision": "f319a722c1de1f151c16",
-    "url": "/saljidalje/static/css/2.492cf449.chunk.css"
+    "revision": "8ffff9b19e58e5f39d10",
+    "url": "/saljidalje/static/css/2.dac57113.chunk.css"
   },
   {
-    "revision": "cada469302c027b24228",
+    "revision": "0df85c1871e26196b00b",
     "url": "/saljidalje/static/css/main.4d9c4131.chunk.css"
   },
   {
-    "revision": "f319a722c1de1f151c16",
-    "url": "/saljidalje/static/js/2.6d4cedf0.chunk.js"
+    "revision": "8ffff9b19e58e5f39d10",
+    "url": "/saljidalje/static/js/2.bb76c4c5.chunk.js"
   },
   {
-    "revision": "cada469302c027b24228",
-    "url": "/saljidalje/static/js/main.fa67b0e0.chunk.js"
+    "revision": "0df85c1871e26196b00b",
+    "url": "/saljidalje/static/js/main.b8b218c0.chunk.js"
   },
   {
     "revision": "98401b44d1042f0ffae7",
