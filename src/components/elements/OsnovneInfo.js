@@ -22,26 +22,26 @@ const OsnovneInfo = () => (
               
                
                 <div class="column is-one-third-mobile  has-text-centered ">
-                <i class="fas fa-truck fa-3x"></i>
+                <i class="fas fa-truck fa-2x"></i>
                         <hr/>
                     <div>
-                    <h3 class="subtitle is-5 is-muted">Besplatna dostava uračunata u cijenu artikla</h3>
+                    <h3 class="subtitle is-6 is-muted">Besplatna dostava uračunata u cijenu artikla</h3>
                         </div>
                 </div>
 
                 <div class="column is-one-third-mobile  has-text-centered ">
-                <i class="fas fa-recycle fa-3x"></i>
+                <i class="fas fa-recycle fa-2x"></i>
                 <hr/>
                     <div>
-                    <h3 class="subtitle is-5 is-muted">14 dana garancije povrata novca. Da biste vratili robu, molimo slijedite našu politiku povrata.</h3>
+                    <h3 class="subtitle is-6 is-muted">14 dana garancije povrata novca. Da biste vratili robu, molimo slijedite našu politiku povrata.</h3>
                         </div>
                 </div>
 
                 <div class="column is-one-third-mobile  has-text-centered ">
-                <i class="fas fa-money-bill-wave fa-3x"></i>
+                <i class="fas fa-money-bill-wave fa-2x"></i>
                 <hr/>
                     <div>
-                    <h3 class="subtitle is-5 is-muted">Plaćanje pouzećem kad vam stigne paket.</h3>
+                    <h3 class="subtitle is-6 is-muted">Plaćanje pouzećem kad vam stigne paket.</h3>
                         </div>
                 </div>
 

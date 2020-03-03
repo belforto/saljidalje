@@ -18,7 +18,8 @@ export default class ScreenDetaljnoArtikl extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-             loading: true,
+            loading: true,
+            photoLinks: this.props.location.state.artikl.photoLinks
         };
     }
 
@@ -33,12 +34,13 @@ export default class ScreenDetaljnoArtikl extends React.Component {
                 .bind(this),
             500
         );
-            console.log("abc ",this.props.location.state.artikl)
+        console.log("abc ", this.props.location.state.artikl)
     }
 
-    changeImage(e) {
-        console.log("changing image*****", e);
-        this.setState({ imgSrc: 'https://i.picsum.photos/id/' + Math.floor(Math.random() * Math.floor(100)) + '/500/600.jpg' });
+    changeImage(photoSrc) {
+        console.log("changing image*****", photoSrc);
+        //  this.setState({ imgSrc: 'https://i.picsum.photos/id/' + Math.floor(Math.random() * Math.floor(100)) + '/500/600.jpg' });
+        this.setState({ imgSrc: photoSrc });
 
     }
 
@@ -53,10 +55,13 @@ export default class ScreenDetaljnoArtikl extends React.Component {
                             <div class="column is-1">
                             </div>
                             <div class="column is-2 horiz odmakniodruba">
-                                <LazyLoadImage onClick={this.changeImage.bind(this, "https://i.picsum.photos/id/11/70/100.jpg")} alt="bla" effect="opacity" src="https://i.picsum.photos/id/1/70/100.jpg" />
-                                <LazyLoadImage onClick={this.changeImage.bind(this, "https://i.picsum.photos/id/21/70/100.jpg")} alt="bla" effect="opacity" src="https://i.picsum.photos/id/1/70/100.jpg" />
-                                <LazyLoadImage onClick={this.changeImage.bind(this, "https://i.picsum.photos/id/13/70/100.jpg")} alt="bla" effect="opacity" src="https://i.picsum.photos/id/1/70/100.jpg" />
-                                <LazyLoadImage onClick={this.changeImage.bind(this, "https://i.picsum.photos/id/41/70/100.jpg")} alt="bla" effect="opacity" src="https://i.picsum.photos/id/1/70/100.jpg" />
+
+                                {
+                                    this.state.photoLinks.map((photo, i) =>
+                                        <LazyLoadImage onClick={this.changeImage.bind(this, photo)} alt="bla" effect="opacity" src={photo} />
+                                    )
+                                }
+
                             </div>
                             <div class="column">
                                 <LazyLoadImage alt="bla" effect="opacity" src={this.state.imgSrc} />
@@ -66,9 +71,10 @@ export default class ScreenDetaljnoArtikl extends React.Component {
                                 <p >{this.props.location.state.artikl.opis}</p>
 
                                 <Link to={{
-                                    pathname: '/order/' + { handle },
+                                    pathname: '/order/' ,
                                     state: {
-                                        imeArtikla: "Majicasssss",
+                                        imeArtikla: this.props.location.state.artikl.naslov,
+                                        artikl: this.props.location.state.artikl,
                                         slika: this.state.imgSrc
                                     }
                                 }}>
@@ -87,7 +93,7 @@ export default class ScreenDetaljnoArtikl extends React.Component {
 
                     }
                 </div>
-                
+
                 <PreporukeComponent />
             </div>
 
