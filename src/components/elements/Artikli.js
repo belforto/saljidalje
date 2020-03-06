@@ -2,7 +2,7 @@
 import React from "react";
 import { LazyLoadImage, trackWindowScroll } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/opacity.css';
-
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 
 import Catalog from "./Catalog";
@@ -51,36 +51,22 @@ class Artikli extends React.Component {
 
         {this.state.loading ? <Catalog /> :
 
-          <div class="box boxnoshadows">
-            <section class="hero is-secondary is-medium  ">
+          <div class="box boxnoshadows ">
+            <section class="hero is-secondary is-medium   ">
 
 
-              <div class="columns is-multiline is-mobile color4 ">
-                <div class="field column is-half-mobile is-one-quarter-widescreen  ">
-                  <div class="control ">
-                    <div class="select is-primary is-right">
-                      <select>
-                        <option>Svi Artikli</option>
-                        <option>Samo odjeća</option>
-                        <option>Samo obuća</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="columns is-multiline is-mobile color4 is-centered">
+              <div class="columns is-multiline is-mobile  is-centered">
 
                 {
                   this.props.artikli.map((item, i) =>
                     <div key={i} class="column is-half-mobile is-one-quarter-widescreen">
                       <Link to={{
-                        pathname: '/detalji/' + i,
+                        pathname: '/detalji/' + item.identifikator,
                         state: {
                           artikl: item,
                           
                         }
-                      }}> <LazyLoadImage alt="bla" effect="opacity" src={item.photoLinks[0]} onClick={(e) => this.saveScrollPosition(e)} />
+                      }}> <LazyLoadImage alt="bla" effect="blur" src={item.photoLinks[0]} onClick={(e) => this.saveScrollPosition(e)} />
                       </Link>
                     </div>
                   )

@@ -43,10 +43,40 @@ body{
 	box-shadow: none;
 }
 
+.red{
+  color: red
+}
 
+.bgrOrange{
+  background-color: #DBA797;
+}
 
+.bgrGreen{
+  background-color: #16796f;
+  color:white
+}
 
+.green{
+color: #16796f;
+}
 
+.day{
+  background-color: rgb(87, 87, 87);
+ font-size: 8em
+}
+
+.hour{
+  background-color:  rgb(87, 87, 87);;
+ font-size: 4em
+}
+.min{
+  background-color: rgb(87, 87, 87);
+ font-size: 2em
+}
+.sec{
+  background-color: rgb(87, 87, 87);
+ font-size: 1em
+}
 
   .slide-container {
     width: 100%;

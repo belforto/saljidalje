@@ -23,19 +23,19 @@ export default class ScreenThankYouPage extends React.Component {
     render() {
         return (
             <div class="container">
-            <section class="hero is-primary ">
+            <section class="hero bgrGreen ">
                
-                    <div class="hero-body">
-                        <div class="container has-text-centered">
-                            <h1 class="title">
+                    <div class="hero-body bgrGreen">
+                        <div class="container has-text-centered bgrGreen">
+                            <h1 class="title bgrGreen">
                                 Zahvaljujemo se na kupnji
       </h1>
-                            <h2 class="subtitle is-1">
+                            <h2 class="subtitle is-1 bgrGreen">
                                 Narudžba ti uskoro stiže :)
       </h2>
       <br/>
       <hr/>
-      <h2 class="subtitle">
+      <h2 class="subtitle bgrGreen">
                                 A do onda..
       </h2>
       <h2 class="title is-3"> Možda bi te mogle interesirati i ove stvari</h2>

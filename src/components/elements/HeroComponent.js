@@ -27,7 +27,7 @@ const HeroComponent = () => (
           <div class="column ">
             <figure class="image is-square">
 
-              <img src="icon.png" style={{width: "105px", height:"auto"}}/>
+             <img src="" style={{width: "105px", height:"auto"}}/>
             </figure>
 
 

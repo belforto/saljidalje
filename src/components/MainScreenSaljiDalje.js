@@ -10,6 +10,7 @@ import PopisRobe from "./elements/PopisRobe"
 import SaljiDaljeNavbar from "./elements/SaljiDaljeNavbar"
 import OsnovneInfo from "./elements/OsnovneInfo"
 import TestimonialComponent from "./elements/TestimonialComponent"
+import FooterSD from "./elements/Footer"
 
 
 
@@ -51,7 +52,7 @@ class MainScreenSaljiDalje extends React.Component {
           <OsnovneInfo />
           <TestimonialComponent />
           <PopisRobe />
-
+          <FooterSD/>
 
 
 

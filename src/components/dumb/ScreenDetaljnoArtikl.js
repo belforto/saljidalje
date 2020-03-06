@@ -68,10 +68,13 @@ export default class ScreenDetaljnoArtikl extends React.Component {
                             </div>
                             <div class="column  ">
                                 <h1 class="title ">{this.props.location.state.artikl.naslov}</h1>
-                                <p >{this.props.location.state.artikl.opis}</p>
+
+                                <p class="subtitle">{this.props.location.state.artikl.opis}</p>
+                                <h3 class="title ">{this.props.location.state.artikl.cijena}</h3>
+                                <p class="subtitle">Dostava uključena u cijenu</p>
 
                                 <Link to={{
-                                    pathname: '/order/' ,
+                                    pathname: '/order/',
                                     state: {
                                         imeArtikla: this.props.location.state.artikl.naslov,
                                         artikl: this.props.location.state.artikl,

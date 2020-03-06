@@ -21,8 +21,10 @@ import Artikli from "../elements/Artikli";
  class ScreenKategorije extends React.Component {
     constructor(props) {
         super(props);
+        this.filterApiResults = this.filterApiResults.bind(this);
         this.state = {
-            articleLoading:true
+            articleLoading:true,
+            kategorijaIzUrl:this.props.match.params.kategorija
         };
     }
 
@@ -34,8 +36,8 @@ import Artikli from "../elements/Artikli";
     }
 
     filterApiResults(value) {
-        // console.log(value);
-
+       //  console.log("xx category xx",this.state.kategorijaIzUrl.toUpperCase(),value.kategorija.toUpperCase());
+        if(this.state.kategorijaIzUrl.toUpperCase()==value.kategorija.toUpperCase())
         return value;
     }
 

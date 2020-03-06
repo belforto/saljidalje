@@ -33,7 +33,7 @@ const zoomOutProperties = {
 
 const TestimonialComponent = () => (
 
-    <div>
+    
 
         <section id="features" class="section section-feature-grey is-medium">
             <div class="container">
@@ -66,7 +66,7 @@ const TestimonialComponent = () => (
 
 
        
-    </div>
+    
 
 
 

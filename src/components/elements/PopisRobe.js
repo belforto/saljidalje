@@ -8,6 +8,11 @@ import Artikli from "./Artikli";
 import { Link } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
+import odjeca from "./ikone/odjeca.jpg"
+import obuca from "./ikone/obuca.jpg"
+import kids from "./ikone/kids.jpg"
+import eko from "./ikone/eko.jpg"
+
 
 
 class PopisRobe extends React.Component {
@@ -31,7 +36,7 @@ class PopisRobe extends React.Component {
     }
 
     filterApiResults(value) {
-        // console.log(value);
+         console.log(value,"www");
 
         return value;
     }
@@ -49,14 +54,14 @@ class PopisRobe extends React.Component {
                             <br />
 
                         </div>
-                        <div class="columns is-multiline is-mobile color4 is-centered box boxnoshadows">
+                        <div class="columns is-multiline is-mobile  is-centered box boxnoshadows">
 
                             <div class="column is-half-mobile is-one-quarter-widescreen">
                                 <Link to={{
                                     pathname: '/category/odjeca',
                                     
                                 }} >
-                                    <LazyLoadImage alt="bla" effect="opacity" src="https://i.picsum.photos/id/22/300/300.jpg" />
+                                    <LazyLoadImage alt="bla" effect="opacity" src={odjeca} />
                                 </Link>
                             </div>
 
@@ -65,7 +70,7 @@ class PopisRobe extends React.Component {
                                     pathname: '/category/obuca',
                                     
                                 }} >
-                                    <LazyLoadImage alt="bla" effect="opacity" src="https://i.picsum.photos/id/23/300/300.jpg" />
+                                    <LazyLoadImage alt="bla" effect="opacity" src={obuca} />
                                 </Link>
                             </div>
 
@@ -74,14 +79,23 @@ class PopisRobe extends React.Component {
                                     pathname: '/category/baby',
                                     
                                 }} >
-                                    <LazyLoadImage alt="bla" effect="opacity" src="https://i.picsum.photos/id/24/300/300.jpg" />
+                                    <LazyLoadImage alt="bla" effect="opacity" src={kids} />
+                                </Link>
+                            </div>
+                            <div class="column is-half-mobile is-one-quarter-widescreen">
+                                <Link to={{
+                                    pathname: '/category/eko',
+                                    
+                                }} >
+                                    <LazyLoadImage alt="bla" effect="opacity" src={eko} />
                                 </Link>
                             </div>
 
-
+                            <h2 class="title is-2">Najnovije</h2>
 
 
                         </div>
+
                         <Artikli artikli={this.props.apiResults.filter(this.filterApiResults)} />
                     </div>
                 }

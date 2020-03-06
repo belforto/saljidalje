@@ -9,6 +9,7 @@ import ScreenKategorije from "./components/dumb/ScreenKategorije";
 
 
 import "./styles.css";
+import ScreenSignUp from "./components/dumb/ScreenSignUp";
 
 
 export default function SaljiDaljeApp() {
@@ -23,6 +24,7 @@ export default function SaljiDaljeApp() {
           <Route path="/category/:kategorija" component={ScreenKategorije} />
           <Route path="/order/" component={ScreenNarudzba} />
           <Route path="/thankyou/" component={ScreenThankYouPage} />
+          <Route path="/signup/" component={ScreenSignUp} />
 
         </Switch>
       </div>
