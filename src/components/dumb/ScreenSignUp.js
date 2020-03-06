@@ -1,7 +1,7 @@
 
 import React from "react";
 
-import * as EmailService from "../elements/EmailService"
+import EmailService from "../elements/EmailService"
 
 
 import DateCountdown from 'react-date-countdown-timer';

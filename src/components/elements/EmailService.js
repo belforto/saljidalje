@@ -1,5 +1,5 @@
 
-module.exports = {
+const EmailService = {
     saveEmail: async function (email,ime) {
        
         console.log("***************email serivce" + email)
@@ -22,3 +22,4 @@ module.exports = {
     }
 };
 
+export default EmailService;
