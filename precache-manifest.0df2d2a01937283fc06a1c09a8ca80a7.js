@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b5ec59322f7ef8fadbeb4140cbd704bc",
+    "revision": "e2fb128edd358118fcb2a6f4e1cc9da8",
     "url": "/saljidalje/index.html"
   },
   {
-    "revision": "0504d59fb1694977db9c",
-    "url": "/saljidalje/static/css/2.ffc8e433.chunk.css"
+    "revision": "b19fa3379bcfca26c73c",
+    "url": "/saljidalje/static/css/2.c60a1172.chunk.css"
   },
   {
-    "revision": "3a9e91d30dba2980f44e",
-    "url": "/saljidalje/static/css/main.4d9c4131.chunk.css"
+    "revision": "b3fcf97209aafcadf13a",
+    "url": "/saljidalje/static/css/main.e6a9a1bd.chunk.css"
   },
   {
-    "revision": "0504d59fb1694977db9c",
-    "url": "/saljidalje/static/js/2.00c77d1b.chunk.js"
+    "revision": "b19fa3379bcfca26c73c",
+    "url": "/saljidalje/static/js/2.2e83592c.chunk.js"
   },
   {
-    "revision": "3a9e91d30dba2980f44e",
-    "url": "/saljidalje/static/js/main.b07ba53d.chunk.js"
+    "revision": "b3fcf97209aafcadf13a",
+    "url": "/saljidalje/static/js/main.daa6cc0a.chunk.js"
   },
   {
     "revision": "98401b44d1042f0ffae7",
@@ -48,8 +48,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/saljidalje/static/media/9.fec424d2.png"
   },
   {
+    "revision": "a8eecd8763429d8d61a171a00467f042",
+    "url": "/saljidalje/static/media/eko.a8eecd87.jpg"
+  },
+  {
+    "revision": "40a0705d77ad26106c7ff9f83179e7e1",
+    "url": "/saljidalje/static/media/kids.40a0705d.jpg"
+  },
+  {
     "revision": "041ed64c4006e994244af9d50d9779cd",
     "url": "/saljidalje/static/media/logo.041ed64c.png"
+  },
+  {
+    "revision": "fc29d9abef905f9c94384234c4e38f76",
+    "url": "/saljidalje/static/media/obuca.fc29d9ab.jpg"
+  },
+  {
+    "revision": "c608da0e25f92ffd3d977f016f2cdce1",
+    "url": "/saljidalje/static/media/odjeca.c608da0e.jpg"
   },
   {
     "revision": "8ad700281acd3ed5929d2687a543d101",
