@@ -6,6 +6,8 @@ import EmailService from "../elements/EmailService"
 
 import DateCountdown from 'react-date-countdown-timer';
 
+import logo from './logo.png';
+
 
 
 export default class ScreenSignUp extends React.Component {
@@ -48,7 +50,7 @@ export default class ScreenSignUp extends React.Component {
 
         return (
             <div>
-                <img src="/logo.png" width="70" height="50" />
+                <img src={logo} width="70" height="50" />
                 <section class="hero is-success is-fullheight ">
                     <div class="hero-body bgrOrange">
                         <div class="container has-text-centered ">
@@ -59,7 +61,7 @@ export default class ScreenSignUp extends React.Component {
                             <br />
                             <p> Do lansiranja webshopa </p>
                             <h1 class="title">
-                                Postani dio Šaljidalje Family
+                                Postani dio ŠaljiDalje Family
             </h1>
                             <br />
                             <br />
@@ -74,8 +76,8 @@ export default class ScreenSignUp extends React.Component {
 
                             <div class="field">
                                 <div class="control">
-                                <input class="input is-medium" type="text" name="ime" placeholder="Tvoje Ime" onChange={this.handleChange} />
-                                    <input class="input is-medium" type="text" name="email" placeholder="Tvoj Email" onChange={this.handleChange} />
+                                <input class="input is-medium is-rounded" type="text" name="ime" placeholder="Tvoje Ime" onChange={this.handleChange} />
+                                    <input class="input is-medium is-rounded" type="text" name="email" placeholder="Tvoj Email" onChange={this.handleChange} />
                                    
                                     <span class="red"> {this.state.error} </span>
                                     <br />
