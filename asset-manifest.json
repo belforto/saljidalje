@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/saljidalje/static/css/main.e6a9a1bd.chunk.css",
-    "main.js": "/saljidalje/static/js/main.4c94f55d.chunk.js",
-    "main.js.map": "/saljidalje/static/js/main.4c94f55d.chunk.js.map",
+    "main.js": "/saljidalje/static/js/main.1e489fa2.chunk.js",
+    "main.js.map": "/saljidalje/static/js/main.1e489fa2.chunk.js.map",
     "runtime-main.js": "/saljidalje/static/js/runtime-main.31119b1c.js",
     "runtime-main.js.map": "/saljidalje/static/js/runtime-main.31119b1c.js.map",
     "static/css/2.c60a1172.chunk.css": "/saljidalje/static/css/2.c60a1172.chunk.css",
     "static/js/2.26e20dc3.chunk.js": "/saljidalje/static/js/2.26e20dc3.chunk.js",
     "static/js/2.26e20dc3.chunk.js.map": "/saljidalje/static/js/2.26e20dc3.chunk.js.map",
     "index.html": "/saljidalje/index.html",
-    "precache-manifest.e0b18ae508210078b951b48b20de970d.js": "/saljidalje/precache-manifest.e0b18ae508210078b951b48b20de970d.js",
+    "precache-manifest.35e4e4c744effb152ec360fdff1caf3f.js": "/saljidalje/precache-manifest.35e4e4c744effb152ec360fdff1caf3f.js",
     "service-worker.js": "/saljidalje/service-worker.js",
     "static/css/2.c60a1172.chunk.css.map": "/saljidalje/static/css/2.c60a1172.chunk.css.map",
     "static/css/main.e6a9a1bd.chunk.css.map": "/saljidalje/static/css/main.e6a9a1bd.chunk.css.map",
@@ -31,6 +31,6 @@
     "static/css/2.c60a1172.chunk.css",
     "static/js/2.26e20dc3.chunk.js",
     "static/css/main.e6a9a1bd.chunk.css",
-    "static/js/main.4c94f55d.chunk.js"
+    "static/js/main.1e489fa2.chunk.js"
   ]
 }
