@@ -10,6 +10,9 @@ import ScreenKategorije from "./components/dumb/ScreenKategorije";
 
 import "./styles.css";
 import ScreenSignUp from "./components/dumb/ScreenSignUp";
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-160018072-1');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 
 export default function SaljiDaljeApp() {
