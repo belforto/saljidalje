@@ -54,7 +54,7 @@ export default class ScreenSignUp extends React.Component {
                 <section class="hero is-success is-fullheight ">
                     <div class="hero-body bgrOrange">
                         <div class="container has-text-centered ">
-                            <DateCountdown dateTo='March 22, 2020 00:00:00 GMT+03:00' />
+                            <DateCountdown dateTo='March 30, 2020 08:00:00 GMT+01:00' />
 
                             <br />
                             <br />
