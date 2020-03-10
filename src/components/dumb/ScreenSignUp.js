@@ -39,7 +39,7 @@ export default class ScreenSignUp extends React.Component {
 
         if (!validEmailRegex.test(e.target.value)&& [e.target.name]=="email") {
             console.log("wrong email")
-            this.setState({error:"E-mail adresa nije ispravna"})
+          //  this.setState({error:"E-mail adresa nije ispravna"})
         }else{
             this.setState({error:""})
         }
