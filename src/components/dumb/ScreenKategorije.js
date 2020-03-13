@@ -14,7 +14,7 @@ import TestimonialComponent from "../elements/TestimonialComponent"
 import PreporukeComponent from "../elements/PreporukeComponent"
 
 import Artikli from "../elements/Artikli";
-
+import placeHolderImg  from "../elements/placeholder.png"
 
 
 
