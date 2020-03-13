@@ -12,15 +12,16 @@ import XLoacalStore from '../elements/XLoacalStore'
 
 import { Animated } from "react-animated-css";
 
+import placeHolderImg  from "./placeholder.png"
+
 
 
 class Artikli extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      input: "", loading: true,
-      listaSlika: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-
+       loading: true,
+   
     };
   }
 
@@ -66,7 +67,7 @@ class Artikli extends React.Component {
                           artikl: item,
                           
                         }
-                      }}> <LazyLoadImage alt="bla" effect="blur" src={item.photoLinks[0]} onClick={(e) => this.saveScrollPosition(e)} />
+                      }}> <LazyLoadImage  placeholderSrc={placeHolderImg} alt="bla" effect="blur" src={item.photoLinks[0]} onClick={(e) => this.saveScrollPosition(e)} />
                       </Link>
                     </div>
                   )

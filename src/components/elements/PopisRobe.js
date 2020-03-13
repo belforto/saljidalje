@@ -18,11 +18,15 @@ import eko from "./ikone/eko.jpg"
 class PopisRobe extends React.Component {
 
     constructor(props) {
+        
         super(props);
         this.state = {
             articleLoading: true,
-            apiResults: []
+            apiResults: [],
+          
         };
+        this.numberOfArticles=0;
+        this.filterApiResults = this.filterApiResults.bind(this);
     }
 
 
@@ -36,9 +40,12 @@ class PopisRobe extends React.Component {
     }
 
     filterApiResults(value) {
-         console.log(value,"www");
-
+        this.numberOfArticles+=1
+       // this.setState({numberOfArticles:this.numberOfArticles+1})
+      console.log(value,"www",this.numberOfArticles);
+      //  if(this.numberOfArticles<2)   
         return value;
+      
     }
 
     render() {

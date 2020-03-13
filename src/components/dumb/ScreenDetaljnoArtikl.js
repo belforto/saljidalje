@@ -8,8 +8,9 @@ import { Link } from 'react-router-dom';
 
 import Catalog from "../elements/Catalog";
 import SaljiDaljeNavbar from "../elements/SaljiDaljeNavbar";
-import TestimonialComponent from "../elements/TestimonialComponent"
 import PreporukeComponent from "../elements/PreporukeComponent"
+
+import placeHolderImg  from "../elements/placeholder.png"
 
 
 
@@ -58,7 +59,7 @@ export default class ScreenDetaljnoArtikl extends React.Component {
 
                                 {
                                     this.state.photoLinks.map((photo, i) =>
-                                        <LazyLoadImage onClick={this.changeImage.bind(this, photo)} alt="bla" effect="opacity" src={photo} />
+                                        <LazyLoadImage placeholderSrc={placeHolderImg} onClick={this.changeImage.bind(this, photo)} alt="bla" effect="opacity" src={photo} />
                                     )
                                 }
 

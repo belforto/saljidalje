@@ -10,8 +10,8 @@ class SaljiDaljeNavbar extends React.Component {
 
 
 
-   async componentDidMount() {
-       await document.addEventListener('DOMContentLoaded', () => {
+    async componentDidMount() {
+        await document.addEventListener('DOMContentLoaded', () => {
 
             // Get all "navbar-burger" elements
             const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
@@ -51,9 +51,9 @@ class SaljiDaljeNavbar extends React.Component {
 
             <nav class="navbar" role="navigation" aria-label="main navigation">
                 <div className="navbar-brand text-center">
-                <Link to="/">
+                    <Link to="/">
                         <img src={logo} width="152" height="108" />
-                  </Link>
+                    </Link>
                     <a role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
@@ -63,38 +63,27 @@ class SaljiDaljeNavbar extends React.Component {
 
                 <div id="navbarBasicExample" class="navbar-menu">
                     <div class="navbar-end">
-                        <a className="navbar-item">
-                            Home
-      </a>
 
-                        <a className="navbar-item">
-                            Documentation
-      </a>
+                        <Link to={{ pathname: '/' }}> <a className="navbar-item"> Home </a></Link>
+
+                        <Link to={{ pathname: '/suradnja' }}> <a className="navbar-item"> Suradnja </a></Link>
+                        <Link to={{ pathname: '/blog' }}> <a className="navbar-item"> Blog </a></Link>
 
                         <div class="navbar-item has-dropdown is-hoverable">
-                            <a className="navbar-link">
-                                More
-        </a>
+                            <Link > <a className="navbar-link"> Ostalo </a></Link>
 
                             <div class="navbar-dropdown">
-                                <a className="navbar-item">
-                                    About
-          </a>
-                                <a className="navbar-item">
-                                    Jobs
-          </a>
-                                <a class="navbar-item">
-                                    Contact
-          </a>
+                                <Link to={{ pathname: '/onama' }}> <a className="navbar-item"> O Nama </a></Link>
+                                <Link to={{ pathname: '/uvjeti' }}> <a className="navbar-item"> Uvjeti </a></Link>
+                                <Link to={{ pathname: '/povrat' }}> <a className="navbar-item"> Povrat Robe </a></Link>
+
                                 <hr class="navbar-divider" />
-                                <a class="navbar-item">
-                                    Report an issue
-          </a>
+                                <Link to={{ pathname: '/suradnja' }}> <a className="navbar-item"> Surađuj S Nama </a></Link>
                             </div>
                         </div>
                     </div>
 
-                  
+
                 </div>
             </nav>
 
@@ -105,6 +94,6 @@ class SaljiDaljeNavbar extends React.Component {
 
 }
 
-    export default SaljiDaljeNavbar;
+export default SaljiDaljeNavbar;
 
 
