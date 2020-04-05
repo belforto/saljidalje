@@ -1,0 +1,35 @@
+-----updating state by using previous state
+
+	this.setState(prevState =>({togle : !prevState.togle}))
+
+	this.setState(prevState => ({	contactsArray : [ ...prevState.contactsArray, newContactObject ]	}))
+
+	this.setState({phone}, this.functionTriggersAfterSettingState )
+
+-----anonimus function which doent need binding
+
+	this.myFunction = () => {	console.log(this.state)	}
+
+------using update to check for validation of the form
+
+	componentDidUpdate(prevState, state) { if(prevState.name !== state.name) this.validateForm()	}
+
+-------use KeyBoardAvoidingView to avoid intersection of fields with keyboard
+
+-------take soem params from newContactObject
+
+
+-------how reducer works in redux-------------
+
+it takes state and update and concats it into one new newContactObject
+
+//old way
+const merge = (prev,next) => Object.assign({},prev,next )
+//new way
+const reducer = (state,update) => ({..state, ...update,})
+
+let state= {}
+state = reducer(state, {foo:"foo"})
+state = reducer(state, {bar:"bar"})
+state = reducer(state, {foo:"bazz"})
+//it has foo and bazz

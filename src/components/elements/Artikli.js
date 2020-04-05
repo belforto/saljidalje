@@ -12,7 +12,7 @@ import XLoacalStore from '../elements/XLoacalStore'
 
 import { Animated } from "react-animated-css";
 
-import placeHolderImg  from "./placeholder.png"
+import placeHolderImg from "./placeholder.png"
 
 
 
@@ -20,8 +20,8 @@ class Artikli extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-       loading: true,
-   
+      loading: true,
+
     };
   }
 
@@ -40,12 +40,12 @@ class Artikli extends React.Component {
 
   }
 
-
-  saveScrollPosition() {
-    var yPosition = window.pageYOffset;
-    XLoacalStore.set("yPosition", yPosition)
-  }
-
+  /*
+    saveScrollPosition() {
+      var yPosition = window.pageYOffset;
+      XLoacalStore.set("yPosition", yPosition)
+    }
+  */
   render() {
     return (
       <div>
@@ -65,9 +65,12 @@ class Artikli extends React.Component {
                         pathname: '/detalji/' + item.identifikator,
                         state: {
                           artikl: item,
-                          
+
                         }
-                      }}> <LazyLoadImage  placeholderSrc={placeHolderImg} alt="bla" effect="blur" src={item.photoLinks[0]} onClick={(e) => this.saveScrollPosition(e)} />
+                      }}> <LazyLoadImage placeholderSrc={placeHolderImg} alt="bla" effect="blur" src={item.photoLinks[0]}
+
+
+                        />
                       </Link>
                     </div>
                   )
@@ -88,5 +91,9 @@ class Artikli extends React.Component {
 }
 
 
-export default trackWindowScroll(Artikli);
+export default
+  //trackWindowScroll(
+  Artikli
+  //)
+  ;
 

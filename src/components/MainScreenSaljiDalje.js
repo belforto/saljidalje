@@ -1,6 +1,5 @@
 import React from "react";
-import { connect } from "react-redux";
-import { addTodo } from "../redux/actions";
+
 
 
 
@@ -20,25 +19,6 @@ class MainScreenSaljiDalje extends React.Component {
     super(props);
     this.state = { input: "" };
   }
-/*
-  updateInput = input => {
-    console.log(input);
-
-    this.setState({ input });
-  };
-
-  handleAddTodo = () => {
-    this.props.addTodo(this.state.input);
-    this.setState({ input: "" });
-  };
-
-
-  simplifiedFunction(value) {
-    console.log(value)
-  }
-*/
-
-
 
 
   render() {

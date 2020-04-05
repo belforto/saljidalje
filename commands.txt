@@ -3,3 +3,5 @@ git commit -m "tracking added"
 git push origin master
 npm run build
 npm run deploy
+
+npm test -- --coverage
