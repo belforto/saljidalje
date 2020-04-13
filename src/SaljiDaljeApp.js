@@ -11,10 +11,12 @@ import ScreenTerms from './components/dumb/ScreenTerms'
 
 import "./styles.css";
 import ScreenSignUp from "./components/dumb/ScreenSignUp";
-import ReactGA from 'react-ga';
+//import ReactGA from 'react-ga';
+
 import ScreenSuradnja from "./components/dumb/ScreenSuradnja";
-ReactGA.initialize('UA-160018072-1');
-ReactGA.pageview(window.location.pathname + window.location.search);
+//ReactGA.initialize('UA-160018072-1');
+//ReactGA.pageview(window.location.pathname + window.location.search);
+
 
 
 export default function SaljiDaljeApp() {

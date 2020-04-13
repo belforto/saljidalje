@@ -56,18 +56,19 @@ class Artikli extends React.Component {
             <section class="hero is-secondary is-medium   ">
 
 
-              <div class="columns is-multiline is-mobile  is-centered">
+              <div data-testid="listaArtikala" class="columns is-multiline is-mobile  is-centered">
 
                 {
                   this.props.artikli.map((item, i) =>
-                    <div key={i} class="column is-half-mobile is-one-quarter-widescreen">
-                      <Link to={{
+                    <div   key={i} class="column is-half-mobile is-one-quarter-widescreen">
+                      <Link data-testid={item.identifikator} 
+                      to={{
                         pathname: '/detalji/' + item.identifikator,
                         state: {
                           artikl: item,
 
                         }
-                      }}> <LazyLoadImage placeholderSrc={placeHolderImg} alt="bla" effect="blur" src={item.photoLinks[0]}
+                      }}> <LazyLoadImage  placeholderSrc={placeHolderImg} alt="bla" effect="blur" src={item.photoLinks[0]}
 
 
                         />
