@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ad27f5d9be9773105f6000325cb07284",
+    "revision": "72a2ea9ccca6b0ff78cb7b59fa12a7de",
     "url": "/saljidalje/index.html"
   },
   {
-    "revision": "f827276f4bc6aeb9bdee",
+    "revision": "957df07bf190d33b7eba",
     "url": "/saljidalje/static/css/2.0cd85bf9.chunk.css"
   },
   {
-    "revision": "ddb06a32981be26c70db",
-    "url": "/saljidalje/static/css/main.e6a9a1bd.chunk.css"
+    "revision": "ec2b948d6d9b28884642",
+    "url": "/saljidalje/static/css/main.9561dd30.chunk.css"
   },
   {
-    "revision": "f827276f4bc6aeb9bdee",
-    "url": "/saljidalje/static/js/2.9bc7002c.chunk.js"
+    "revision": "957df07bf190d33b7eba",
+    "url": "/saljidalje/static/js/2.bc16ab33.chunk.js"
   },
   {
-    "revision": "ddb06a32981be26c70db",
-    "url": "/saljidalje/static/js/main.32053e43.chunk.js"
+    "revision": "ec2b948d6d9b28884642",
+    "url": "/saljidalje/static/js/main.6e915d07.chunk.js"
   },
   {
     "revision": "98401b44d1042f0ffae7",
@@ -48,24 +48,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/saljidalje/static/media/9.fec424d2.png"
   },
   {
-    "revision": "a8eecd8763429d8d61a171a00467f042",
-    "url": "/saljidalje/static/media/eko.a8eecd87.jpg"
+    "revision": "00751c09b155b2ddd83a7657a753cbf8",
+    "url": "/saljidalje/static/media/eko.00751c09.jpg"
   },
   {
-    "revision": "40a0705d77ad26106c7ff9f83179e7e1",
-    "url": "/saljidalje/static/media/kids.40a0705d.jpg"
+    "revision": "28041b2d036bcbe543494048c5f29d1a",
+    "url": "/saljidalje/static/media/kids.28041b2d.jpg"
   },
   {
     "revision": "041ed64c4006e994244af9d50d9779cd",
     "url": "/saljidalje/static/media/logo.041ed64c.png"
   },
   {
-    "revision": "fc29d9abef905f9c94384234c4e38f76",
-    "url": "/saljidalje/static/media/obuca.fc29d9ab.jpg"
+    "revision": "fd47abc289c41ced9126b08d7e0e6d41",
+    "url": "/saljidalje/static/media/obuca.fd47abc2.jpg"
   },
   {
-    "revision": "c608da0e25f92ffd3d977f016f2cdce1",
-    "url": "/saljidalje/static/media/odjeca.c608da0e.jpg"
+    "revision": "bb4fee17b3f45a8541094b3911437b99",
+    "url": "/saljidalje/static/media/odjeca.bb4fee17.jpg"
   },
   {
     "revision": "8ad700281acd3ed5929d2687a543d101",
