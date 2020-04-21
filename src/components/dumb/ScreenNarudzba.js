@@ -1,18 +1,11 @@
 
 import React from "react";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/opacity.css';
 
 import Popup from "reactjs-popup";
 
-
-
-
 import Catalog from "../elements/Catalog";
-import SaljiDaljeNavbar from "../elements/SaljiDaljeNavbar";
-import TestimonialComponent from "../elements/TestimonialComponent"
-import PreporukeComponent from "../elements/PreporukeComponent"
-import { Link } from 'react-router-dom';
+
 
 import XLoacalStore from '../elements/XLoacalStore'
 
@@ -31,7 +24,7 @@ export default class ScreenNarudzba extends React.Component {
         this.state = {
 
             loading: true,
-            modalOpen:false,
+            modalOpen: false,
             slika: slika,
             imeArtikla: imeArtikla,
             artikl: artikl,
@@ -41,8 +34,8 @@ export default class ScreenNarudzba extends React.Component {
             adresa: "",
             grad: "",
             mob: "",
-            igProfil:"",
-            privola:false
+            igProfil: "",
+            privola: false
 
         };
         /*
@@ -76,11 +69,12 @@ export default class ScreenNarudzba extends React.Component {
 
     validForm() {
         const { email, imePrezime, adresa, grad } = this.state;
-        const isEnabled =  imePrezime.length > 0 && adresa.length && grad.length > 0 > 0;
+        const isEnabled = imePrezime.length > 0 && adresa.length > 0 && grad.length > 0;
 
         console.log(email, imePrezime, isEnabled)
 
         if (!isEnabled) {
+            console.log(email, imePrezime, adresa, grad, "******provjera")
             alert("Provjeri jel uneseno ime, adresa i grad")
         }
         return isEnabled;
@@ -88,8 +82,8 @@ export default class ScreenNarudzba extends React.Component {
 
     async sendOrder() {
         try {
-          
-            if (  !this.validForm()) return null;
+
+            if (!this.validForm()) return null;
             this.setState({ loading: true })
             //check if order is still avalible
             var identifikator = this.state.artikl.identifikator;
@@ -115,9 +109,9 @@ export default class ScreenNarudzba extends React.Component {
                                 "mob": this.state.mob,
                                 "igProfil": this.state.igProfil,
                                 "privola": this.state.privola,
-                                "slika":this.state.slika,
-                                "identifikator":this.state.artikl.identifikator,
-                                "imeArtikla":this.state.imeArtikla,
+                                "slika": this.state.slika,
+                                "identifikator": this.state.artikl.identifikator,
+                                "imeArtikla": this.state.imeArtikla,
                                 "datumNarudzbe": new Date().toISOString().slice(0, 10)
 
                             }
@@ -185,7 +179,7 @@ export default class ScreenNarudzba extends React.Component {
     }
 
     handleChange(e) {
-       // console.log(111, e.target.name)
+        // console.log(111, e.target.name)
         this.setState({ [e.target.name]: e.target.value });
     }
 
@@ -197,10 +191,10 @@ export default class ScreenNarudzba extends React.Component {
             <div>
                 {this.state.loading ? <Catalog /> :
                     <div>
-                        <div class="container box ">
+                        <div class="container box bgrGreen ">
 
                             Unos podataka za slanje
-                <progress class="progress is-primary" value="85" max="100">50%</progress>
+                             <progress class="progress is-primary is-custom" value="85" max="100">50%</progress>
                             <hr />
 
                             <div class="content has-text-centered">
@@ -238,7 +232,7 @@ export default class ScreenNarudzba extends React.Component {
                                             <div class="field has-addons">
 
                                                 <p class="control is-expanded has-icons-left has-icons-right">
-                                                    <input class="input" type="text" placeholder="Ime i Prezime" value={this.state.saveMyData ? XLoacalStore.get("imePrezime") : null} name="imePrezime" onChange={this.handleChange} />
+                                                    <input class="input" type="text" data-testid="imeprezime" placeholder="Ime i Prezime" value={this.state.saveMyData ? XLoacalStore.get("imePrezime") : null} name="imePrezime" onChange={this.handleChange} />
                                                     <span class="icon is-small is-left">
                                                         <i class="fas fa-user"></i>
                                                     </span>
@@ -247,6 +241,7 @@ export default class ScreenNarudzba extends React.Component {
                                                     </span>
                                                 </p>
                                             </div>
+                                            <p class="help"> Dopiši molim te  prezime koje se nalazi na tvom poštanskom sandučiću ako nije isto kao tvoje</p>
 
                                         </div>
                                     </div>
@@ -259,7 +254,7 @@ export default class ScreenNarudzba extends React.Component {
                                             <div class="field has-addons">
 
                                                 <p class="control is-expanded has-icons-left has-icons-right">
-                                                    <input class="input" type="text" placeholder="Adresa i Kućni broj" value={this.state.saveMyData ? XLoacalStore.get("adresa") : null} name="adresa" onChange={this.handleChange} />
+                                                    <input class="input" type="text" data-testid="adresa" placeholder="Adresa i Kućni broj" value={this.state.saveMyData ? XLoacalStore.get("adresa") : null} name="adresa" onChange={this.handleChange} />
                                                     <span class="icon is-small is-left">
                                                         <i class="fas fa-address-book"></i>
                                                     </span>
@@ -268,7 +263,6 @@ export default class ScreenNarudzba extends React.Component {
                                                     </span>
                                                 </p>
                                             </div>
-                                            <p class="help"> Dopiši molim te  prezime koje se nalazi na tvom poštanskom sandučiću ako nije isto kao tvoje</p>
                                         </div>
                                     </div>
                                 </div>
@@ -280,7 +274,7 @@ export default class ScreenNarudzba extends React.Component {
                                             <div class="field has-addons">
 
                                                 <p class="control is-expanded has-icons-left has-icons-right">
-                                                    <input class="input" type="text" placeholder="Poštanski Broj i Grad" value={this.state.saveMyData ? XLoacalStore.get("grad") : null} name="grad" onChange={this.handleChange} />
+                                                    <input class="input" data-testid="postagrad" type="text" placeholder="Poštanski Broj i Grad" value={this.state.saveMyData ? XLoacalStore.get("grad") : null} name="grad" onChange={this.handleChange} />
                                                     <span class="icon is-small is-left">
                                                         <i class="fas fa-mail-bulk"></i>
                                                     </span>
@@ -293,12 +287,39 @@ export default class ScreenNarudzba extends React.Component {
                                         </div>
                                     </div>
                                 </div>
+                                <div class="field is-horizontal">
+
+                                    <div class="field-label"></div>
+                                    <div class="field-body">
+                                        <div class="field is-expanded">
+                                            <div class="field has-addons">
+
+                                                <p class="control is-expanded has-icons-left has-icons-right">
+                                                    <input class="input" type="email" data-testid="email" placeholder="Email Adresa" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" value={this.state.saveMyData ? XLoacalStore.get("email") : null} name="email" onChange={this.handleChange} />
+                                                    <span class="icon is-small is-left">
+                                                        <i class="fas fa-envelope"></i>
+                                                    </span>
+                                                    <span class="icon is-small is-right">
+                                                        <i class="fas fa-check"></i>
+                                                    </span>
+                                                </p>
+                                            </div>
+                                            <p class="help">A može i email adresa ako više preferiraš tako</p>
+                                            <br />
+                                            <label class="checkbox">
+                                                <input type="checkbox" name="privola" onChange={this.handleChange} />
+                                                Ubaci me i na e-mail listu kako bi ti javili za nove artikle prije nego se pojave u webshopu
+                                    </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+
 
 
                                 <div class="field is-horizontal">
                                     <div class="field-label"></div>
                                     <div class="field-body">
-                                        <p class="help">Trebamo tvoj kontakt kako bi se mogli javit u vezi s narudžbom ako bude trebalo radi nekog razloga</p>
                                         <div class="field is-expanded">
                                             <div class="field has-addons">
                                                 <p class="control">
@@ -307,12 +328,13 @@ export default class ScreenNarudzba extends React.Component {
           </a>
                                                 </p>
                                                 <p class="control is-expanded has-icons-right">
-                                                    <input class="input" type="tel" placeholder="Tvoj Broj Mobitela" value={this.state.saveMyData ? XLoacalStore.get("mob") : null} name="mob" onChange={this.handleChange} />
+                                                    <input class="input" type="tel" data-testid="mob" placeholder="Tvoj Broj Mobitela" value={this.state.saveMyData ? XLoacalStore.get("mob") : null} name="mob" onChange={this.handleChange} />
                                                     <span class="icon is-small is-right">
-                                                        
+
                                                     </span>
                                                 </p>
                                             </div>
+                                            <p class="help">Trebamo tvoj kontakt kako bi se mogli javit u vezi s narudžbom ako bude trebalo radi nekog razloga</p>
 
                                         </div>
                                     </div>
@@ -326,12 +348,12 @@ export default class ScreenNarudzba extends React.Component {
                                                 <p class="help">Ili da te kontaktiramo preko IG profila</p>
 
                                                 <p class="control is-expanded has-icons-left has-icons-right">
-                                                    <input class="input" type="text" placeholder="Instagram profil"  name="igProfil" onChange={this.handleChange} />
+                                                    <input class="input" type="text" placeholder="Instagram profil" name="igProfil" onChange={this.handleChange} />
                                                     <span class="icon is-small is-left">
                                                         <i class="fab fa-instagram"></i>
                                                     </span>
                                                     <span class="icon is-small is-right">
-                                                        
+
                                                     </span>
                                                 </p>
                                             </div>
@@ -340,33 +362,8 @@ export default class ScreenNarudzba extends React.Component {
                                     </div>
                                 </div>
 
-                               
-                                <div class="field is-horizontal">
-                                    
-                                    <div class="field-label"></div>
-                                    <div class="field-body">
-                                        <div class="field is-expanded">
-                                            <div class="field has-addons">
 
-                                                <p class="control is-expanded has-icons-left has-icons-right">
-                                                    <input class="input" type="email" placeholder="Email Adresa" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" value={this.state.saveMyData ? XLoacalStore.get("email") : null} name="email" onChange={this.handleChange} />
-                                                    <span class="icon is-small is-left">
-                                                        <i class="fas fa-envelope"></i>
-                                                    </span>
-                                                    <span class="icon is-small is-right">
-                                                        <i class="fas fa-check"></i>
-                                                    </span>
-                                                </p>
-                                            </div>
-                                            <p class="help">A može i email adresa ako više preferiraš tako</p>
-                                    <br/>
-                                    <label class="checkbox">
-                                        <input type="checkbox" name="privola" onChange={this.handleChange} />
-                                        Ubaci me i na e-mail listu kako bi ti javili za nove artikle prije nego se pojave u webshopu
-                                    </label>
-                                        </div>
-                                    </div>
-                                </div>
+
 
 
 
@@ -385,7 +382,7 @@ export default class ScreenNarudzba extends React.Component {
                                             <div class="control">
 
 
-                                                <button class="button is-primary is-large is-fullwidth" onClick={this.sendOrder}>
+                                                <button class="button bgrOrange pastelText is-large is-fullwidth" data-testid="posaljiNarudzbu" onClick={this.sendOrder}>
                                                     Pošalji Narudžbu
         </button>
 
@@ -407,14 +404,14 @@ export default class ScreenNarudzba extends React.Component {
                 }
 
 
-<Popup
-          open={this.state.modalOpen}
-          closeOnDocumentClick
-          modal
-       //   onClose={this.closeModal}
-        >
-          <div> Modal content </div>
-        </Popup>
+                <Popup
+                    open={this.state.modalOpen}
+                    closeOnDocumentClick
+                    modal
+                //   onClose={this.closeModal}
+                >
+                    <div> Modal content </div>
+                </Popup>
             </div>
 
         );

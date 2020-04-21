@@ -27,8 +27,16 @@
 
 body{
   font-family: 'Quicksand', sans-serif;
+ 
+ 
 }
 
+.footer2{
+  padding: 0;
+}
+.padingfooter{
+  padding: 3rem 1.5rem 6rem;
+}
 
 
 .marginNarudzbe{
@@ -50,14 +58,26 @@ body{
 .bgrOrange{
   background-color: #DBA797;
 }
+.bgrSpecial{
+  /*
+background-image: url("./components/elements/footer8.jpg")
+*/
+}
 
 .bgrGreen{
-  background-color: #16796f;
+  background-color: #78B3A3;
   color:white
+}
+.pastelText{
+  color:#FFF9F7;
 }
 
 .green{
-color: #16796f;
+color: #78B3A3;
+/*
+color:#FFE6DE;
+
+*/
 }
 
 .day{
@@ -140,3 +160,29 @@ color: #16796f;
     }
     }
   
+
+
+    .progress.is-custom::-webkit-progress-value {
+      background-color:  #DBA797
+    }
+  
+    .progress.is-custom::-moz-progress-bar {
+      background-color:  #DBA797
+    }
+  
+    .progress.is-custom::-ms-fill {
+      background-color:  #DBA797
+    }
+  
+    .progress.is-custom:indeterminate {
+      background-color:  #DBA797
+    }
+
+    .katBox{
+      padding: 30;
+      margin:666;
+    }
+
+    .textOrange{
+      color:  #DBA797
+    }

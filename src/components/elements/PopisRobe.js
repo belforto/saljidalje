@@ -34,16 +34,18 @@ class PopisRobe extends React.Component {
         //redux action call
         await this.props.fetchArticles();
         this.setState({ articleLoading: this.props.articleLoading, apiResults: this.props.apiResults })
-
-
-
+        
     }
 
     filterApiResults(value) {
         this.numberOfArticles+=1
        // this.setState({numberOfArticles:this.numberOfArticles+1})
+      /* this.setState(prevState => ({
+        numberOfArticles: prevState.numberOfArticles+1
+      }));
+      */
       console.log(value,"www",this.numberOfArticles);
-      //  if(this.numberOfArticles<2)   
+        if(this.numberOfArticles<8)   
         return value;
       
     }
@@ -54,8 +56,8 @@ class PopisRobe extends React.Component {
                 {this.state.articleLoading ? <div>load</div> :
                     <div>
                         <div class="title-wrapper has-text-centered">
-                            <h2 data-testid="testnaslov" class="title is-2">Što sve možete naći kod nas</h2>
-                            <h3 class="subtitle is-5 is-muted"></h3>
+                            <h2 data-testid="testnaslov" class="title is-1">KATEGORIJE</h2>
+                            <h3 class="subtitle is-5 is-muted">Što sve možete naći kod nas</h3>
                             <div class="divider is-centered"></div>
                             <br />
                             <br />
@@ -98,7 +100,7 @@ class PopisRobe extends React.Component {
                                 </Link>
                             </div>
 
-                            <h2 class="title is-2">Najnovije</h2>
+                            <h2 class="title is-2">NAJNOVIJE</h2>
 
 
                         </div>

@@ -27,18 +27,18 @@ export default class ScreenThankYouPage extends React.Component {
                
                     <div class="hero-body bgrGreen">
                         <div class="container has-text-centered bgrGreen">
-                            <h1 class="title bgrGreen">
+                            <h1 class="subtitle is-5 bgrGreen">
                                 Zahvaljujemo se na kupnji
       </h1>
-                            <h2 class="subtitle is-1 bgrGreen">
+                            <h2 class="title bgrGreen">
                                 Narudžba ti uskoro stiže :)
       </h2>
       <br/>
       <hr/>
-      <h2 class="subtitle bgrGreen">
+      <h2 class="subtitle is-5 bgrGreen">
                                 A do onda..
       </h2>
-      <h2 class="title is-3"> Možda bi te mogle interesirati i ove stvari</h2>
+      <h2 class="title is-3 pastelText"> Možda bi te mogle interesirati i ove stvari</h2>
       <i class="fas fa-angle-double-down fa-3x"></i>
 
 
@@ -63,7 +63,7 @@ export default class ScreenThankYouPage extends React.Component {
                                             pathname: '/' ,
                                             
                                         }}>
-                                            <button class="button is-danger is-large is-fullwidth">
+                                            <button class="button  is-large is-fullwidth bgrOrange pastelText">
                                                 Vrati me na Početnu
         </button>
                                         </Link>

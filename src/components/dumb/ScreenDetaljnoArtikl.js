@@ -10,7 +10,7 @@ import Catalog from "../elements/Catalog";
 import SaljiDaljeNavbar from "../elements/SaljiDaljeNavbar";
 import PreporukeComponent from "../elements/PreporukeComponent"
 
-import placeHolderImg  from "../elements/placeholder.png"
+import placeHolderImg  from "../elements/placeholder.jpg"
 
 
 
@@ -51,6 +51,8 @@ export default class ScreenDetaljnoArtikl extends React.Component {
             <div>
                 <div class="container">
                     <SaljiDaljeNavbar />
+           
+     
                     {this.state.loading ? <Catalog /> :
                         <div class="columns  is mobile ">
                             <div class="column is-1">
@@ -74,7 +76,9 @@ export default class ScreenDetaljnoArtikl extends React.Component {
                                 <h3 class="title ">{this.props.location.state.artikl.cijena}</h3>
                                 <p class="subtitle">Dostava uključena u cijenu</p>
 
-                                <Link to={{
+                                <Link 
+                                data-testid="kupi"
+                                to={{
                                     pathname: '/order/',
                                     state: {
                                         imeArtikla: this.props.location.state.artikl.naslov,

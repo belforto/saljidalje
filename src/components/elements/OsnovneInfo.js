@@ -10,8 +10,9 @@ const OsnovneInfo = () => (
 <section  class="section section-feature-grey is-medium">
     <div class="container">
         <div class="title-wrapper has-text-centered">
-            <h2 class="title is-2">Dobrodošli u Šalji Dalje</h2>
-            <h3 class="subtitle is-5 is-muted">Online Second Hand Shop</h3>
+        <h3 class="subtitle is-5 is-muted">Dobrodošli u</h3>
+            <h2 class="title is-1">ŠALJI DALJE</h2>
+            <h3 class="subtitle is-6 is-muted">Online Second Hand Shop</h3>
             <div class="divider is-centered"></div>
             <br/>
             <hr/>

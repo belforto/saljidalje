@@ -1,18 +1,16 @@
 
 import React from "react";
-import { LazyLoadImage, trackWindowScroll } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/opacity.css';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-
-
-import Catalog from "./Catalog";
+import 'react-lazy-load-image-component/src/effects/opacity.css';
 import { Link } from 'react-router-dom';
-import XLoacalStore from '../elements/XLoacalStore'
+import Catalog from "./Catalog";
+import placeHolderImg from "./placeholder.jpg";
 
 
-import { Animated } from "react-animated-css";
 
-import placeHolderImg from "./placeholder.png"
+
+
 
 
 
@@ -36,6 +34,17 @@ class Artikli extends React.Component {
       1000
     );
     console.log(this.props.artikli, "from fetch---------------");
+
+    //var item = document.querySelectorAll("h6[data-testid='testfooter']");
+   // console.log("element was found"+item[0])
+    /*
+        const item = document.querySelector(
+            ".restore-" + this.props.location.state
+          );
+          if (item) {
+            item.scrollIntoView();
+          }
+          */
 
 
   }

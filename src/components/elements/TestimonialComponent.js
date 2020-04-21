@@ -38,7 +38,8 @@ const TestimonialComponent = () => (
         <section id="features" class="section section-feature-grey is-medium">
             <div class="container">
                 <div class="title-wrapper has-text-centered">
-                    <h2 class="title is-2">Iskustva zadovoljnih kupaca</h2>
+                <h3 class="subtitle is-5 is-muted">Iskustva</h3>
+                    <h2 class="title is-2">ZADOVOLJNIH  KUPACA</h2>
                     <h3 class="subtitle is-5 is-muted">Što cure kažu o nama.</h3>
                     <div class="divider is-centered"></div>
                     <br />

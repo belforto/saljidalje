@@ -4,6 +4,8 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import logo from './logo.png';
 
+import PathPutanja from './PathPutanja';
+
 
 
 class SaljiDaljeNavbar extends React.Component {
@@ -38,7 +40,10 @@ class SaljiDaljeNavbar extends React.Component {
         });
     }
 
-
+componentWillUnmount(){
+    //clear all listeners
+   // window.removeEventListener("keyup", handleKeyUp);
+}
 
 
     render() {
@@ -48,7 +53,7 @@ class SaljiDaljeNavbar extends React.Component {
 
         return (
 
-
+<div>
             <nav class="navbar" role="navigation" aria-label="main navigation">
                 <div className="navbar-brand text-center">
                     <Link to="/">
@@ -85,9 +90,11 @@ class SaljiDaljeNavbar extends React.Component {
 
 
                 </div>
+                
             </nav>
 
-
+<PathPutanja/>
+</div>
         );
 
     }

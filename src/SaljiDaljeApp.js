@@ -11,12 +11,9 @@ import ScreenTerms from './components/dumb/ScreenTerms'
 
 import "./styles.css";
 import ScreenSignUp from "./components/dumb/ScreenSignUp";
-//import ReactGA from 'react-ga';
+
 
 import ScreenSuradnja from "./components/dumb/ScreenSuradnja";
-//ReactGA.initialize('UA-160018072-1');
-//ReactGA.pageview(window.location.pathname + window.location.search);
-
 
 
 export default function SaljiDaljeApp() {
@@ -32,6 +29,7 @@ export default function SaljiDaljeApp() {
           <Route path="/order/" component={ScreenNarudzba} />
           <Route path="/thankyou/" component={ScreenThankYouPage} />
           <Route path="/signup/" component={ScreenSignUp} />
+          <Route path="/signupthankyou/" component={ScreenSignUp} />
           <Route path="/suradnja/" component={ScreenSuradnja} />
           <Route path="/uvjeti/" component={ScreenTerms} />
 
