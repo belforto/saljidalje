@@ -49,7 +49,7 @@
     "preset": "jest-puppeteer",
     "collectCoverage": true
   },
-  "homepage": "https://belforto.github.io/saljidalje",
+  "homepage": "http://saljidalje.eu/saljidalje",
   "browserslist": {
     "production": [
       ">0.2%",
