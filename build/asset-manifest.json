@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/saljidalje/static/css/main.9561dd30.chunk.css",
-    "main.js": "/saljidalje/static/js/main.6e915d07.chunk.js",
-    "main.js.map": "/saljidalje/static/js/main.6e915d07.chunk.js.map",
+    "main.js": "/saljidalje/static/js/main.ebeecca6.chunk.js",
+    "main.js.map": "/saljidalje/static/js/main.ebeecca6.chunk.js.map",
     "runtime-main.js": "/saljidalje/static/js/runtime-main.31119b1c.js",
     "runtime-main.js.map": "/saljidalje/static/js/runtime-main.31119b1c.js.map",
     "static/css/2.0cd85bf9.chunk.css": "/saljidalje/static/css/2.0cd85bf9.chunk.css",
-    "static/js/2.bc16ab33.chunk.js": "/saljidalje/static/js/2.bc16ab33.chunk.js",
-    "static/js/2.bc16ab33.chunk.js.map": "/saljidalje/static/js/2.bc16ab33.chunk.js.map",
+    "static/js/2.1ff1e19f.chunk.js": "/saljidalje/static/js/2.1ff1e19f.chunk.js",
+    "static/js/2.1ff1e19f.chunk.js.map": "/saljidalje/static/js/2.1ff1e19f.chunk.js.map",
     "index.html": "/saljidalje/index.html",
-    "precache-manifest.848b188d9db46c4a1ecc5eaa08ac0036.js": "/saljidalje/precache-manifest.848b188d9db46c4a1ecc5eaa08ac0036.js",
+    "precache-manifest.9a8dde1814c9f22a5a27a2d2cca8efca.js": "/saljidalje/precache-manifest.9a8dde1814c9f22a5a27a2d2cca8efca.js",
     "service-worker.js": "/saljidalje/service-worker.js",
     "static/css/2.0cd85bf9.chunk.css.map": "/saljidalje/static/css/2.0cd85bf9.chunk.css.map",
     "static/css/main.9561dd30.chunk.css.map": "/saljidalje/static/css/main.9561dd30.chunk.css.map",
@@ -29,8 +29,8 @@
   "entrypoints": [
     "static/js/runtime-main.31119b1c.js",
     "static/css/2.0cd85bf9.chunk.css",
-    "static/js/2.bc16ab33.chunk.js",
+    "static/js/2.1ff1e19f.chunk.js",
     "static/css/main.9561dd30.chunk.css",
-    "static/js/main.6e915d07.chunk.js"
+    "static/js/main.ebeecca6.chunk.js"
   ]
 }

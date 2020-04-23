@@ -1,6 +1,6 @@
 import React from "react";
 import MainScreenSaljiDalje from "./components/MainScreenSaljiDalje";
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { HashRouter as Router, Switch, Route } from 'react-router-dom'
 import ScreenDetaljnoArtikl from "./components/dumb/ScreenDetaljnoArtikl";
 import ScreenNarudzba from "./components/dumb/ScreenNarudzba";
 import ScreenThankYouPage from "./components/dumb/ScreenThankYouPage";
