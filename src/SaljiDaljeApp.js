@@ -7,7 +7,7 @@ import ScreenThankYouPage from "./components/dumb/ScreenThankYouPage";
 import ScreenKategorije from "./components/dumb/ScreenKategorije";
 import ScreenTerms from './components/dumb/ScreenTerms'
 
-
+import 'bulma/css/bulma.css'
 
 import "./styles.css";
 import ScreenSignUp from "./components/dumb/ScreenSignUp";
