@@ -192,6 +192,6 @@ color:#FFE6DE;
       margin-right: 2em;
     }
 
-    control.has-icons-left.has-icons-right{
+    .control.has-icons-left.has-icons-right{
       padding: 0.5em
     }
