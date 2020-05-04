@@ -46,7 +46,7 @@ test("Prva stranica - Pronađi Artikl i klikni na njega", async () => {
 
   await page.waitFor(1000);
   const pageUrl = await page.url();
-  var expected = "http://localhost:3000/saljidalje/detalji/TEST"
+  var expected = "http://localhost:3000/#/saljidalje/detalji/TEST"
   console.log(link, expected, pageUrl, expected == pageUrl)
   //await expect(expected==pageUrl).toBe(true);
 

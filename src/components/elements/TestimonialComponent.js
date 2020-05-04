@@ -1,17 +1,17 @@
 import React from "react";
 import { Zoom } from 'react-slideshow-image';
 
-import testimonial5 from './testimonials/16.png';
+import testimonial5 from './testimonials/16.jpg';
 
-import testimonial4 from './testimonials/13.png';
+import testimonial4 from './testimonials/13.jpg';
 
-import testimonial3 from './testimonials/12.png';
+import testimonial3 from './testimonials/12.jpg';
 
-import testimonial2 from './testimonials/10.png';
+import testimonial2 from './testimonials/10.jpg';
 
-import testimonial1 from './testimonials/9.png';
+import testimonial1 from './testimonials/9.jpg';
 
-import testimonial30 from './testimonials/30.png';
+import testimonial30 from './testimonials/30.jpg';
 
 
 const images = [
