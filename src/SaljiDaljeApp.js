@@ -2,6 +2,7 @@ import React from "react";
 import MainScreenSaljiDalje from "./components/MainScreenSaljiDalje";
 import { HashRouter as Router, Switch, Route } from 'react-router-dom'
 import ScreenDetaljnoArtikl from "./components/dumb/ScreenDetaljnoArtikl";
+import ScreenDetaljnoDirekt from "./components/dumb/ScreenDetaljnoDirekt";
 import ScreenNarudzba from "./components/dumb/ScreenNarudzba";
 import ScreenThankYouPage from "./components/dumb/ScreenThankYouPage";
 import ScreenKategorije from "./components/dumb/ScreenKategorije";
@@ -25,6 +26,7 @@ export default function SaljiDaljeApp() {
         <Switch>
           <Route path="/" exact component={MainScreenSaljiDalje} />
           <Route path="/detalji/:id" component={ScreenDetaljnoArtikl} />
+          <Route path="/direkt/detalji/:id" component={ScreenDetaljnoDirekt} />
           <Route path="/category/:kategorija" component={ScreenKategorije} />
           <Route path="/order/" component={ScreenNarudzba} />
           <Route path="/thankyou/" component={ScreenThankYouPage} />

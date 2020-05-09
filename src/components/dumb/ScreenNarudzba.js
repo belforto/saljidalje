@@ -20,7 +20,7 @@ export default class ScreenNarudzba extends React.Component {
         this.validForm = this.validForm.bind(this);
         this.handleChange = this.handleChange.bind(this);
 
-        const { imeArtikla, slika, artikl } = this.props.location.state
+        const { imeArtikla, slika, artikl ,ponovnoSeMozeKupiti} = this.props.location.state
         this.state = {
 
             loading: true,
@@ -28,6 +28,7 @@ export default class ScreenNarudzba extends React.Component {
             slika: slika,
             imeArtikla: imeArtikla,
             artikl: artikl,
+            ponovnoSeMozeKupiti:ponovnoSeMozeKupiti,
 
             imePrezime: "",
             email: "",
@@ -91,7 +92,7 @@ export default class ScreenNarudzba extends React.Component {
                 { method: 'GET' })
             var free = await slobodnoZaNarucit.json()
             console.log("ok to order ", free)
-            if (free) {
+            if (free || this.state.artikl.ponovnoSeMozeKupiti===true) {
                 //if tru then send order
                 console.log("ok to order ")
 

@@ -195,3 +195,8 @@ color:#FFE6DE;
     .control.has-icons-left.has-icons-right{
       padding: 0.5em
     }
+
+    #root > div > div > div.container > div.columns.is.mobile > div:nth-child(4){
+      margin: 0.5em;
+     
+    }
