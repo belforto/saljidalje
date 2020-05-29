@@ -151,11 +151,13 @@ color:#FFE6DE;
       margin:7px
     }
   
-    .aa{
+    .respTestimonial{
       
     /*  transform: scale(2.3);
       padding-top: 20px
       */
+      max-width: 100%;
+      height: auto;
       
     }
     }
