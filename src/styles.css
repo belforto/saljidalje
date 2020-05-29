@@ -156,12 +156,19 @@ color:#FFE6DE;
     /*  transform: scale(2.3);
       padding-top: 20px
       */
-      max-width: 100%;
-      height: auto;
+      display: flex;
+      
       
     }
     }
   
+    .respTestimonial{
+      
+    
+        display: flex;
+        
+        
+      }
 
 
     .progress.is-custom::-webkit-progress-value {
