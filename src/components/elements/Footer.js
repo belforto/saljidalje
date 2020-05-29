@@ -73,7 +73,7 @@ export default class FooterSD extends React.Component {
 
             <div class="column">
 
-              <ul>
+              <ul >
                 <Link to={{ pathname: '/suradnja' }}> <a className="navbar-item"> Suradnja </a></Link>
                 <Link to={{ pathname: '/onama' }}> <a className="navbar-item"> O Nama </a></Link>
                 <Link to={{ pathname: '/uvjeti' }}> <a className="navbar-item"> Uvjeti </a></Link>

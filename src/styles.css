@@ -169,6 +169,14 @@ color:#FFE6DE;
         
       }
 
+      #root > div > div > div > footer > div > div > div > div:nth-child(2) > ul{
+        margin-left: 0px
+        
+      }
+      #root > div > div > div > footer > div > div > div > div:nth-child(3) > ul{
+        margin-left: 0px
+
+      }
 
     .progress.is-custom::-webkit-progress-value {
       background-color:  #DBA797
