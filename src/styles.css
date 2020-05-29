@@ -157,7 +157,7 @@ color:#FFE6DE;
       padding-top: 20px
       */
       display: flex;
-      
+      max-height: 400px;
       
     }
     }
@@ -166,7 +166,6 @@ color:#FFE6DE;
       
     
         display: flex;
-        
         
       }
 
