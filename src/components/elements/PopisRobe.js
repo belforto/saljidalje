@@ -11,7 +11,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import odjeca from "./ikone/odjeca.jpg"
 import obuca from "./ikone/obuca.jpg"
 import kids from "./ikone/kids.jpg"
-import eko from "./ikone/eko.jpg"
+import handmade from "./ikone/handmade.jpg"
 
 
 
@@ -93,10 +93,10 @@ class PopisRobe extends React.Component {
                             </div>
                             <div class="column is-half-mobile is-one-quarter-widescreen">
                                 <Link to={{
-                                    pathname: '/category/eko',
+                                    pathname: '/category/handmade',
                                     
                                 }} >
-                                    <LazyLoadImage alt="bla" effect="opacity" src={eko} />
+                                    <LazyLoadImage alt="bla" effect="opacity" src={handmade} />
                                 </Link>
                             </div>
 
