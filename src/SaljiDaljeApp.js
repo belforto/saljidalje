@@ -15,6 +15,7 @@ import ScreenSignUp from "./components/dumb/ScreenSignUp";
 
 
 import ScreenSuradnja from "./components/dumb/ScreenSuradnja";
+import ScreenPovratRobe from "./components/dumb/ScreenPovratRobe";
 
 
 export default function SaljiDaljeApp() {
@@ -34,6 +35,7 @@ export default function SaljiDaljeApp() {
           <Route path="/signupthankyou/" component={ScreenSignUp} />
           <Route path="/suradnja/" component={ScreenSuradnja} />
           <Route path="/uvjeti/" component={ScreenTerms} />
+          <Route path="/povrat/" component={ScreenPovratRobe} />
 
         </Switch>
       </div>

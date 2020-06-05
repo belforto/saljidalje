@@ -18,8 +18,8 @@ const HeroComponent = () => (
 
 
           <div class="column is-offset-2 ">
-            <h1 class="subtitle">9875-ti SECOND HAND SHOP</h1>
-            <h2 class="title">Ali prvi i jedini koji misli na prirodu </h2>
+            <h1 class="subtitle">TAJNO MJESTO</h1>
+            <h2 class="title">na kojem odjeću pronalaze cure koje su uvijek u trendu </h2>
 
           </div>
 
