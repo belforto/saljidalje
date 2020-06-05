@@ -85,15 +85,14 @@ export default class FooterSD extends React.Component {
 
               <ul>
                 <Link to={{ pathname: '/kontakt' }}> <a className="navbar-item"> Kontakt </a></Link>
-                <Link to={{ pathname: '/blog' }}> <a className="navbar-item"> Blog </a></Link>
 
 
               </ul>
             </div>
             <div class="column">
-              <h6>About Us</h6>
-              <p class="has-text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.
+              <h6>Naša misija</h6>
+              <p class="has-text-center">
+              Omogućiti dobroj, kvalitetnoj odjeći, koja samo otežava policama na&scaron;ih ormara da pronade svoje sretnije ruke, čime nećemo samo usrećiti druge, već ovakvom gestom radimo na nećem puno većem - očuvanju na&scaron;e prirode i boljoj budućnosti nas samih.
             </p>
             </div>
           </div>

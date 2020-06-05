@@ -18,6 +18,8 @@ import ScreenSuradnja from "./components/dumb/ScreenSuradnja";
 import ScreenPovratRobe from "./components/dumb/ScreenPovratRobe";
 
 
+import ScreenONama from "./components/dumb/ScreenONama";
+
 export default function SaljiDaljeApp() {
   return (
     <Router basename="/saljidalje">
@@ -36,7 +38,7 @@ export default function SaljiDaljeApp() {
           <Route path="/suradnja/" component={ScreenSuradnja} />
           <Route path="/uvjeti/" component={ScreenTerms} />
           <Route path="/povrat/" component={ScreenPovratRobe} />
-
+          <Route path="/onama/" component={ScreenONama} />
         </Switch>
       </div>
     </Router>

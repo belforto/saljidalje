@@ -34,7 +34,7 @@ const OsnovneInfo = () => (
                 <i class="fas fa-recycle fa-2x green"></i>
                 <hr/>
                     <div>
-                    <h3 class="subtitle is-5 is-muted">14 dana garancije povrata novca. Da biste vratili robu, molimo slijedite našu politiku povrata.</h3>
+                    <h3 class="subtitle is-5 is-muted">Sve novosti vezane uz naš webshop i djelovanje pratite na našem IG profilu  <strong>       @saljidalje</strong>. Primamo sve vaše ideje i riječi podrške kao i zamjerke te pritužbe. Javite se volimo se dopisivati :)</h3>
                         </div>
                 </div>
 
