@@ -10,16 +10,23 @@ import PathPutanja from './PathPutanja';
 
 class SaljiDaljeNavbar extends React.Component {
 
-
-
-     componentDidMount() {
-         
+    constructor(props) {
+        super(props);
+        this.state = {
+            active: "",
+        };
     }
 
-componentWillUnmount(){
-    //clear all listeners
-   // window.removeEventListener("keyup", handleKeyUp);
-}
+    togle=() =>{
+        if(this.state.active==="")
+        {
+            this.setState({active:"is-active"})
+        }
+        else{
+            this.setState({active:""})
+        }
+
+    }
 
 
     render() {
@@ -35,20 +42,19 @@ componentWillUnmount(){
                     <Link to="/">
                         <img src={logo} width="152" height="108" />
                     </Link>
-                    <a role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <a onClick={()=> this.togle()} role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
                     </a>
                 </div>
 
-                <div id="navbarBasicExample" class="navbar-menu">
+                <div id="navbarBasicExample" class={"navbar-menu "+this.state.active}>
                     <div class="navbar-end">
 
                         <Link to={{ pathname: '/' }}> <a className="navbar-item"> Home </a></Link>
 
                         <Link to={{ pathname: '/suradnja' }}> <a className="navbar-item"> Suradnja </a></Link>
-                        <Link to={{ pathname: '/blog' }}> <a className="navbar-item"> Blog </a></Link>
 
                         <div class="navbar-item has-dropdown is-hoverable">
                             <Link > <a className="navbar-link"> Ostalo </a></Link>
