@@ -102,7 +102,6 @@ export default class ScreenDetaljnoArtikl extends React.Component {
                     }
                 </div>
 
-                <PreporukeComponent />
             </div>
 
         );

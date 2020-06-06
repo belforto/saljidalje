@@ -113,7 +113,7 @@ export default class ScreenDetaljnoDirekt extends React.Component {
                     }
                 </div>
 
-                <PreporukeComponent />
+              
             </div>
 
         );

@@ -48,16 +48,11 @@ export default class ScreenThankYouPage extends React.Component {
                
             </section>
 
-            <section class="hero  ">
-               
-                    <div class="hero-body">
-                        <div class="container has-text-centered">
-                        majica hlače
-                        </div>
-                    </div>
-               
-                
-            </section>
+          
+                       
+                       <PreporukeComponent/>
+                        
+                   
 
             <Link to={{
                                             pathname: '/' ,

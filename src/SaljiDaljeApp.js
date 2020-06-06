@@ -19,6 +19,7 @@ import ScreenPovratRobe from "./components/dumb/ScreenPovratRobe";
 
 
 import ScreenONama from "./components/dumb/ScreenONama";
+import PreporukeComponent from "./components/elements/PreporukeComponent"
 
 export default function SaljiDaljeApp() {
   return (
@@ -39,6 +40,8 @@ export default function SaljiDaljeApp() {
           <Route path="/uvjeti/" component={ScreenTerms} />
           <Route path="/povrat/" component={ScreenPovratRobe} />
           <Route path="/onama/" component={ScreenONama} />
+         
+          
         </Switch>
       </div>
     </Router>
