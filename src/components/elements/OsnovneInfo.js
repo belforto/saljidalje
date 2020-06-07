@@ -34,7 +34,7 @@ const OsnovneInfo = () => (
                 <i class="fas fa-recycle fa-2x green"></i>
                 <hr/>
                     <div>
-                    <h3 class="subtitle is-5 is-muted">Sve novosti vezane uz naš webshop i djelovanje pratite na našem IG profilu  <strong>       @saljidalje</strong>. Primamo sve vaše ideje i riječi podrške kao i zamjerke te pritužbe. Javite se volimo se dopisivati :)</h3>
+                    <h3 class="subtitle is-5 is-muted">Sve novosti vezane za naš webshop i djelovanje pratite na našem IG profilu  <strong>       @saljidalje</strong>, u čiji inbox primamo vaše kritike </h3>
                         </div>
                 </div>
 
@@ -42,7 +42,7 @@ const OsnovneInfo = () => (
                 <i class="fas fa-money-bill-wave fa-2x green"></i>
                 <hr/>
                     <div>
-                    <h3 class="subtitle is-5 is-muted">Plaćanje pouzećem kad vam stigne paket.</h3>
+                    <h3 class="subtitle is-5 is-muted">Plaćanje pouzećem kad vam stigne paket</h3>
                         </div>
                 </div>
 
