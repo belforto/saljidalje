@@ -33,10 +33,10 @@ class ScreenKategorije extends React.Component {
         this.setState({ articleLoading: this.props.articleLoading, apiResults: this.props.apiResults })
 
 
-        
+
         var Ypos = localStorage.getItem('Y');
-//  console.log(Ypos,"asdfg")
-        if(Ypos !="" ||Ypos !=undefined)
+ //console.log(Ypos,"asdfg",window.location.href.includes("category"))
+        if(Ypos !="" ||Ypos !=undefined && window.location.href.includes("category"))
         {
             setTimeout(function(){
                 window.scrollTo(0, Ypos)  
