@@ -32,7 +32,38 @@ class ScreenKategorije extends React.Component {
         await this.props.fetchArticles();
         this.setState({ articleLoading: this.props.articleLoading, apiResults: this.props.apiResults })
 
+
+        
+        var Ypos = localStorage.getItem('Y');
+//  console.log(Ypos,"asdfg")
+        if(Ypos !="" ||Ypos !=undefined)
+        {
+            setTimeout(function(){
+                window.scrollTo(0, Ypos)  
+    
+            }, 2000); 
+
+        }
+
+      
+      
+     window.addEventListener('click', this.handleScroll, true)
     }
+
+
+  componentWillUnmount() {
+    window.removeEventListener('click',null);
+  }
+
+
+  handleScroll = () => {
+     
+  var  lastScrollY = window.scrollY;
+  localStorage.setItem('Y',lastScrollY );  
+
+  //console.log(111,lastScrollY)
+  };
+
 
     filterApiResults(value) {
         //  console.log("xx category xx",this.state.kategorijaIzUrl.toUpperCase(),value.kategorija.toUpperCase());

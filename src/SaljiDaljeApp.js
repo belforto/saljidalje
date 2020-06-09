@@ -19,13 +19,14 @@ import ScreenPovratRobe from "./components/dumb/ScreenPovratRobe";
 
 
 import ScreenONama from "./components/dumb/ScreenONama";
-import PreporukeComponent from "./components/elements/PreporukeComponent"
+
 
 export default function SaljiDaljeApp() {
   return (
     <Router basename="/saljidalje">
+      
       <div   >
-
+   
         <br />
         <Switch>
           <Route path="/" exact component={MainScreenSaljiDalje} />
@@ -44,6 +45,7 @@ export default function SaljiDaljeApp() {
           
         </Switch>
       </div>
+    
     </Router>
   );
 }

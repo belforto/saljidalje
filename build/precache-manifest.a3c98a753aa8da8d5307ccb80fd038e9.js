@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "70552f61973b31c73ca446cdcbced0de",
+    "revision": "e7935f675dddec69a141e822719c5402",
     "url": "/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.d65e727e.chunk.css"
   },
   {
-    "revision": "2004610445c618c792d3",
+    "revision": "4cdfa5135e1db3656197",
     "url": "/static/css/main.f34bdb89.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.3104dff9.chunk.js"
   },
   {
-    "revision": "2004610445c618c792d3",
-    "url": "/static/js/main.17086374.chunk.js"
+    "revision": "4cdfa5135e1db3656197",
+    "url": "/static/js/main.7010f609.chunk.js"
   },
   {
     "revision": "9606e7035817ffd824c2",
@@ -68,8 +68,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/odjeca.58b1f655.jpg"
   },
   {
-    "revision": "784ad39231511a798b14db7176824534",
-    "url": "/static/media/predlosci.784ad392.jpg"
+    "revision": "4525fa1672fad4fc3ab388416c1cc675",
+    "url": "/static/media/predlosci.4525fa16.jpg"
   },
   {
     "revision": "8ad700281acd3ed5929d2687a543d101",
