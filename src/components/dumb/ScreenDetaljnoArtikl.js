@@ -45,6 +45,8 @@ export default class ScreenDetaljnoArtikl extends React.Component {
 
     }
 
+    
+
     render() {
         const handle = "sssss"//this.props.match.params
         return (
@@ -76,6 +78,9 @@ export default class ScreenDetaljnoArtikl extends React.Component {
                                 <h3 class="title ">{this.props.location.state.artikl.cijena}</h3>
                                 <p class="subtitle">Dostava uključena u cijenu</p>
 
+
+                                
+
                                 <Link 
                                 data-testid="kupi"
                                 to={{
@@ -93,7 +98,7 @@ export default class ScreenDetaljnoArtikl extends React.Component {
                                         <span class="icon is-small">
                                             <i class="fas fa-check"></i>
                                         </span>
-                                        <span>Kupi </span>
+                                        <span>Plaćanje </span>
                                     </button>
                                 </Link>
                             </div>

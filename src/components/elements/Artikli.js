@@ -72,7 +72,7 @@ class Artikli extends React.Component {
                     <div   key={i} class="column is-half-mobile is-one-quarter-widescreen">
                       <Link data-testid={item.identifikator} 
                       to={{
-                        pathname: '/detalji/' + item.identifikator,
+                        pathname: '/direkt/detalji/' + item.identifikator,
                         state: {
                           artikl: item,
 

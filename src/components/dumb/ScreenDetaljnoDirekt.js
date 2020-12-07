@@ -38,6 +38,8 @@ export default class ScreenDetaljnoDirekt extends React.Component {
 
         let response = await fetch(API_ENDPOINT + artikl);
         let data = await response.json()
+
+        console.log("-------------photolinks",data,API_ENDPOINT + artikl);
        await this.setState({ artikl: data[0] ,
         loading: false
     })
@@ -53,6 +55,30 @@ export default class ScreenDetaljnoDirekt extends React.Component {
         //  this.setState({ imgSrc: 'https://i.picsum.photos/id/' + Math.floor(Math.random() * Math.floor(100)) + '/500/600.jpg' });
         this.setState({ imgSrc: photoSrc });
 
+    }
+
+    saveToKosarica =()=>{
+        console.log("sejv to lokal storage", this.state.artikl);
+        let KOSARICA=JSON.parse(localStorage.getItem('KOSARICA'));
+        if(KOSARICA==null) KOSARICA=[]
+        let kosarica={
+            identifikator:this.state.artikl.identifikator,
+            cijena:this.state.artikl.cijena,
+            naslov:this.state.artikl.naslov,
+            slika:this.state.artikl.photoLinks[0],
+            ponovnoSeMozeKupiti:this.state.artikl.ponovnoSeMozeKupiti,
+        }
+        let dosadasnjiIdentifikatori=KOSARICA.map(x=> {   return(x.identifikator)})
+        let postojiVecUkosarici=dosadasnjiIdentifikatori.includes(kosarica.identifikator);
+        console.log(postojiVecUkosarici,!postojiVecUkosarici, dosadasnjiIdentifikatori,this.state.artikl.ponovnoSeMozeKupiti);
+        
+        if(kosarica.ponovnoSeMozeKupiti || !postojiVecUkosarici)
+        {
+            KOSARICA.push(kosarica)
+        }
+       
+        localStorage.setItem('KOSARICA', JSON.stringify(KOSARICA));
+        localStorage.setItem("KOSARICASIZE",KOSARICA.length)
     }
 
     render() {
@@ -86,25 +112,32 @@ export default class ScreenDetaljnoDirekt extends React.Component {
                                 <h3 class="title ">{this.state.artikl.cijena}</h3>
                                 <p class="subtitle">Dostava uključena u cijenu</p>
 
+                                <button  onClick={()=> this.saveToKosarica()} class="button is-success  is-large is-fullwidth ">
+                                        <span class="icon is-small">
+                                            <i class="fas fa-check"></i>
+                                        </span>
+                                        <span>Dodaj U Košaricu </span>
+                                    </button>
+
                                 <Link
                                     data-testid="kupi"
                                     to={{
                                         pathname: '/order/',
                                         state: {
-                                            imeArtikla: "naslov",
-                                            artikl: this.state.artikl,
-                                            slika: this.state.artikl.photoLinks[0],
-                                            ponovnoSeMozeKupiti:this.state.artikl.ponovnoSeMozeKupiti
+                                            // imeArtikla: "naslov",
+                                            // artikl: this.state.artikl,
+                                            // slika: this.state.artikl.photoLinks[0],
+                                            // ponovnoSeMozeKupiti:this.state.artikl.ponovnoSeMozeKupiti
                                         }
                                     }}>
 
 
 
-                                    <button class="button is-success  is-large is-fullwidth ">
+                                    <button class="button is-danger  is-large is-fullwidth ">
                                         <span class="icon is-small">
                                             <i class="fas fa-check"></i>
                                         </span>
-                                        <span>Kupi </span>
+                                        <span>Plaćanje </span>
                                     </button>
                                 </Link>
                             </div>

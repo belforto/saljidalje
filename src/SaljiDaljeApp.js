@@ -20,7 +20,6 @@ import ScreenPovratRobe from "./components/dumb/ScreenPovratRobe";
 
 import ScreenONama from "./components/dumb/ScreenONama";
 
-
 export default function SaljiDaljeApp() {
   return (
     <Router basename="/saljidalje">
