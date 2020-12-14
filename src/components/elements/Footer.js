@@ -54,7 +54,7 @@ export default class FooterSD extends React.Component {
         <div class="container">
           <div class="columns">
             <div class="column">
-              <h6 data-testid="testfooter">Postani dio SaljiDalje Family</h6>
+              <h6 data-aos="fade-up" data-testid="testfooter">Postani dio SaljiDalje Family</h6>
               
               <div class="control has-icons-left has-icons-right morespace">
                 <input class="input is-medium paddingfooter" type="text" placeholder="Tvoje Ime" name="ime" onChange={this.handleChange}/>

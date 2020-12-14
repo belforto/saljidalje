@@ -9,7 +9,12 @@ import PopisRobe from "./elements/PopisRobe"
 import SaljiDaljeNavbar from "./elements/SaljiDaljeNavbar"
 import OsnovneInfo from "./elements/OsnovneInfo"
 import TestimonialComponent from "./elements/TestimonialComponent"
+import SpecialPromoComponent from "./elements/SpecialPromoComponent"
 import FooterSD from "./elements/Footer"
+
+
+ 
+import AOS from 'aos'; 
 
 
 
@@ -17,7 +22,13 @@ import FooterSD from "./elements/Footer"
 class MainScreenSaljiDalje extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { input: "" };
+    this.state = { input: "" }; 
+    
+    AOS.init();
+  }
+
+  componentWillReceiveProps(){
+    AOS.refresh();
   }
 
 
@@ -29,6 +40,7 @@ class MainScreenSaljiDalje extends React.Component {
 
 
           <HeroComponent />
+          <SpecialPromoComponent />
           <OsnovneInfo />
           <TestimonialComponent />
           <PopisRobe />

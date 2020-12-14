@@ -56,7 +56,7 @@ class PopisRobe extends React.Component {
                 {this.state.articleLoading ? <div>load</div> :
                     <div>
                         <div class="title-wrapper has-text-centered">
-                            <h2 data-testid="testnaslov" class="title is-1">KATEGORIJE</h2>
+                            <h2 data-aos="fade-up" data-testid="testnaslov" class="title is-1">KATEGORIJE</h2>
                             <h3 class="subtitle is-5 is-muted">Što sve možete naći kod nas</h3>
                             <div class="divider is-centered"></div>
                             <br />
