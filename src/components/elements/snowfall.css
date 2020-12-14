@@ -56,22 +56,18 @@ i:nth-child(9n-1) {
   background-image: url("snowflake.svg");
 }
 
-.aa {
-  position: relative;
-  background-color: #dba797;
-  width: 100%;
-	height: 650px;
-	
-}
 
-#root > div > div > div > section.hero.bgrHero{
-	background-image: none;
-}
+
+
 
 @media (min-width: 30px) and (max-width: 480px) {
   /* CSS */
 
   .aa {
+		position: relative;
+		background-color: #dba797;
+		width: 100%;
+		height: 650px;
     background-image: url("xmas1.png");
     background-repeat: no-repeat;
     background-size: cover;

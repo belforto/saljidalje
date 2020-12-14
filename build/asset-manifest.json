@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.8458e528.chunk.css",
-    "main.js": "/static/js/main.f5d2acab.chunk.js",
-    "main.js.map": "/static/js/main.f5d2acab.chunk.js.map",
+    "main.css": "/static/css/main.ff607316.chunk.css",
+    "main.js": "/static/js/main.5528d7d7.chunk.js",
+    "main.js.map": "/static/js/main.5528d7d7.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.7beda545.js",
     "runtime-main.js.map": "/static/js/runtime-main.7beda545.js.map",
-    "static/css/2.2e8a85ac.chunk.css": "/static/css/2.2e8a85ac.chunk.css",
-    "static/js/2.5095db4c.chunk.js": "/static/js/2.5095db4c.chunk.js",
-    "static/js/2.5095db4c.chunk.js.map": "/static/js/2.5095db4c.chunk.js.map",
+    "static/css/2.ce034d09.chunk.css": "/static/css/2.ce034d09.chunk.css",
+    "static/js/2.b6c0fbb4.chunk.js": "/static/js/2.b6c0fbb4.chunk.js",
+    "static/js/2.b6c0fbb4.chunk.js.map": "/static/js/2.b6c0fbb4.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.25130421de76b9e53b015fd5f5beeec6.js": "/precache-manifest.25130421de76b9e53b015fd5f5beeec6.js",
+    "precache-manifest.c8b192e3553f1769233458aa4a31ca49.js": "/precache-manifest.c8b192e3553f1769233458aa4a31ca49.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/2.2e8a85ac.chunk.css.map": "/static/css/2.2e8a85ac.chunk.css.map",
-    "static/css/main.8458e528.chunk.css.map": "/static/css/main.8458e528.chunk.css.map",
+    "static/css/2.ce034d09.chunk.css.map": "/static/css/2.ce034d09.chunk.css.map",
+    "static/css/main.ff607316.chunk.css.map": "/static/css/main.ff607316.chunk.css.map",
     "static/media/10.jpg": "/static/media/10.0204d145.jpg",
     "static/media/12.jpg": "/static/media/12.8edc1316.jpg",
     "static/media/13.jpg": "/static/media/13.8cbc7454.jpg",
@@ -25,13 +25,14 @@
     "static/media/obuca.jpg": "/static/media/obuca.c332d464.jpg",
     "static/media/odjeca.jpg": "/static/media/odjeca.58b1f655.jpg",
     "static/media/predlosci.jpg": "/static/media/predlosci.4525fa16.jpg",
+    "static/media/snowfall.css": "/static/media/xmas1.10b92ea9.png",
     "static/media/styles.css": "/static/media/wall.8ad70028.png"
   },
   "entrypoints": [
     "static/js/runtime-main.7beda545.js",
-    "static/css/2.2e8a85ac.chunk.css",
-    "static/js/2.5095db4c.chunk.js",
-    "static/css/main.8458e528.chunk.css",
-    "static/js/main.f5d2acab.chunk.js"
+    "static/css/2.ce034d09.chunk.css",
+    "static/js/2.b6c0fbb4.chunk.js",
+    "static/css/main.ff607316.chunk.css",
+    "static/js/main.5528d7d7.chunk.js"
   ]
 }
