@@ -1,37 +1,28 @@
 import React, { Component } from "react";
-import "./snowfall.css";
+ import "./snowfall.css";
+import snowflake from'./snowflake.svg';
+import xmasBgr from'./xmas1.png';
 export default class SpecialPromoComponent extends Component {
   render() {
     return (
-      <div class="aa" >
+      <div class="aa" style={{ backgroundImage: "url(" + xmasBgr + ")"}}  >
         
-        <div class="snowflakes">
         
-        <i style={{left:"1%"}} />
-        <i style={{left:"11%"}} />
-        <i style={{left:"21%"}} />
-        <i style={{left:"31%"}} />
-        <i style={{left:"41%"}} />
-        <i style={{left:"51%"}} />
-        <i style={{left:"61%"}} />
-        <i style={{left:"61%"}} />
-        <i style={{left:"71%"}} />
-        <i style={{left:"81%"}} />
-        <i style={{left:"91%"}} />
-        <i style={{left:"1%"}} />
-        <i style={{left:"14%"}} />
-        <i style={{left:"25%"}} />
-        <i style={{left:"35%"}} />
-        <i style={{left:"43%"}} />
-        <i style={{left:"57%"}} />
-        <i style={{left:"62%"}} />
-        <i style={{left:"69%"}} />
-        <i style={{left:"73%"}} />
-        <i style={{left:"84%"}} />
-        <i style={{left:"91%"}} />
+        
+        <img style={{left:"1%"}}  src={snowflake}/>
+        <img style={{left:"3%"}}  src={snowflake}/>
+        <img style={{left:"15%"}}  src={snowflake}/>
+        <img style={{left:"28%"}}  src={snowflake}/>
+        <img style={{left:"39%"}}  src={snowflake}/>
+        <img style={{left:"41%"}}  src={snowflake}/>
+        <img style={{left:"55%"}}  src={snowflake}/>
+        <img style={{left:"67%"}}  src={snowflake}/>
+        <img style={{left:"78%"}}  src={snowflake}/>
+        <img style={{left:"88%"}}  src={snowflake}/>
+        <img style={{left:"98%"}}  src={snowflake}/>
           
           
-      </div>
+      
       </div>
     );
   }

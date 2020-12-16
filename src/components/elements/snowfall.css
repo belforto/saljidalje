@@ -2,62 +2,94 @@
   /* CSS */
 
   .aa {
-		position: relative;
+    position: relative;
+    z-index: 10;
 		background-color: #dba797;
 		width: 100%;
 		height: 650px;
-    background-image: url("xmas1.png");
+    /* background-image: url("xmas1.png"); */
     background-repeat: no-repeat;
     background-size: cover;
 	}
 	#root > div > div > div > section.hero.bgrHero{
 		background-image: none;
-	}
+  }
+
+  img {
+    position: absolute;
+    z-index: 100;
+    width: 50px;
+    height: 50px;
+  
+    animation: move 7s infinite;
+    -webkit-animation: move 7s infinite;
+  -moz-animation: move 7s infinite;
+  -ms-animation: move 7s infinite;
+  -o-animation: move 7s infinite;
+  animation: move 7s infinite;
+    animation: move 7s infinite;
+    animation-delay: 1s;
+    color: white;
+    
+  }
+  
+ 
+  
 }
 
 
-i {
+img {
+  position: absolute;
+  z-index: 100;
   width: 50px;
   height: 50px;
-  position: absolute;
+  -webkit-animation: move 7s infinite;
+-moz-animation: move 7s infinite;
+-ms-animation: move 7s infinite;
+-o-animation: move 7s infinite;
+animation: move 7s infinite;
   animation: move 7s infinite;
   animation-delay: 1s;
   color: white;
-  background-image: url("snowflake.svg");
+  
 }
-i:nth-child(4n-2) {
+img:nth-child(4n-2) {
   width: 25px;
   height: 25px;
   position: absolute;
+  z-index: 100;
   animation: move 5s infinite;
   animation-delay: 2s;
   color: white;
-  background-image: url("snowflake.svg");
+  
 }
-i:nth-child(3n-5) {
+img:nth-child(3n-5) {
   width: 20px;
   height: 20px;
   position: absolute;
+  z-index: 100;
   animation: move 6s infinite;
   animation-delay: 3s;
   color: white;
-  background-image: url("snowflake.svg");
+  
 }
-i:nth-child(4n-3) {
+img:nth-child(4n-3) {
   width: 30px;
   height: 30px;
   position: absolute;
+  z-index: 100;
   animation: move 8s infinite;
   animation-delay: 2s;
   color: white;
-  background-image: url("snowflake.svg");
+
 }
-i:nth-child(9n-1) {
+img:nth-child(9n-1) {
   position: absolute;
+  z-index: 100;
   animation: move 4s infinite;
   animation-delay: 3s;
   color: white;
-  background-image: url("snowflake.svg");
+  
 }
 
 
@@ -66,7 +98,24 @@ i:nth-child(9n-1) {
 
 
 
-@keyframes move {
+ @keyframes move {
+  0% {
+    top: 0px;
+    opacity:0.77;
+  }
+  30% {
+     opacity: 1; 
+
+  }
+  100% {
+    top: 100%;
+   
+    opacity:0;
+  }
+}
+
+/*
+@-webkit-keyframes move {
   0% {
     top: 0px;
     opacity: 77%;
@@ -78,4 +127,4 @@ i:nth-child(9n-1) {
     top: 100%;
     opacity: 0%;
   }
-}
+} */
