@@ -9,17 +9,17 @@ export default class SpecialPromoComponent extends Component {
         
         
         
-        <img style={{left:"1%"}}  src={snowflake}/>
-        <img style={{left:"3%"}}  src={snowflake}/>
-        <img style={{left:"15%"}}  src={snowflake}/>
-        <img style={{left:"28%"}}  src={snowflake}/>
-        <img style={{left:"39%"}}  src={snowflake}/>
-        <img style={{left:"41%"}}  src={snowflake}/>
-        <img style={{left:"55%"}}  src={snowflake}/>
-        <img style={{left:"67%"}}  src={snowflake}/>
-        <img style={{left:"78%"}}  src={snowflake}/>
-        <img style={{left:"88%"}}  src={snowflake}/>
-        <img style={{left:"98%"}}  src={snowflake}/>
+        <img  class={"animacijaPahuljice"}style={{left:"1%"}}  src={snowflake}/>
+        <img class={"animacijaPahuljice"} style={{left:"3%"}}  src={snowflake}/>
+        <img class={"animacijaPahuljice"} style={{left:"15%"}}  src={snowflake}/>
+        <img class={"animacijaPahuljice"} style={{left:"28%"}}  src={snowflake}/>
+        <img class={"animacijaPahuljice"} style={{left:"39%"}}  src={snowflake}/>
+        <img class={"animacijaPahuljice"} style={{left:"41%"}}  src={snowflake}/>
+        <img class={"animacijaPahuljice"} style={{left:"55%"}}  src={snowflake}/>
+        <img class={"animacijaPahuljice"} style={{left:"67%"}}  src={snowflake}/>
+        <img class={"animacijaPahuljice"} style={{left:"78%"}}  src={snowflake}/>
+        <img class={"animacijaPahuljice"} style={{left:"88%"}}  src={snowflake}/>
+        <img class={"animacijaPahuljice"} style={{left:"98%"}}  src={snowflake}/>
           
           
       

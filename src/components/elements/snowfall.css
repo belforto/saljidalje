@@ -15,7 +15,7 @@
 		background-image: none;
   }
 
-  img {
+  .animacijaPahuljice {
     position: absolute;
     z-index: 100;
     width: 50px;
@@ -38,7 +38,7 @@
 }
 
 
-img {
+.animacijaPahuljice {
   position: absolute;
   z-index: 100;
   width: 50px;
@@ -53,7 +53,7 @@ animation: move 7s infinite;
   color: white;
   
 }
-img:nth-child(4n-2) {
+.animacijaPahuljice:nth-child(4n-2) {
   width: 25px;
   height: 25px;
   position: absolute;
@@ -63,7 +63,7 @@ img:nth-child(4n-2) {
   color: white;
   
 }
-img:nth-child(3n-5) {
+.animacijaPahuljice:nth-child(3n-5) {
   width: 20px;
   height: 20px;
   position: absolute;
@@ -73,7 +73,7 @@ img:nth-child(3n-5) {
   color: white;
   
 }
-img:nth-child(4n-3) {
+.animacijaPahuljice:nth-child(4n-3) {
   width: 30px;
   height: 30px;
   position: absolute;
@@ -83,7 +83,7 @@ img:nth-child(4n-3) {
   color: white;
 
 }
-img:nth-child(9n-1) {
+.animacijaPahuljice:nth-child(9n-1) {
   position: absolute;
   z-index: 100;
   animation: move 4s infinite;
