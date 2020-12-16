@@ -5,7 +5,9 @@ import xmasBgr from'./xmas1.png';
 export default class SpecialPromoComponent extends Component {
   render() {
     return (
-      <div class="aa" style={{ backgroundImage: "url(" + xmasBgr + ")"}}  >
+      <div class="aa" 
+      // style={{ backgroundImage: "url(" + xmasBgr + ")"}} 
+       >
         
         
         
