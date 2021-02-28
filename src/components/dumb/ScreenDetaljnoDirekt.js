@@ -85,12 +85,12 @@ export default class ScreenDetaljnoDirekt extends React.Component {
         const handle = "sssss"//this.props.match.params
         return (
             <div>
-                <div class="container">
+                <div class="container" style={{    padding: "20px"}}>
                     <SaljiDaljeNavbar />
 
 
                     {this.state.loading ? <Catalog /> :
-                        <div class="columns  is mobile ">
+                        <div class="columns  is mobile " >
                             <div class="column is-1">
                             </div>
                             <div class="column is-2 horiz odmakniodruba">

@@ -35,7 +35,7 @@ const TestimonialComponent = () => (
 
     
 
-        <section id="features" class="section section-feature-grey is-medium">
+        <section id="features" class="section section-feature-grey is-medium positionCenter">
             <div class="container">
                 <div class="title-wrapper has-text-centered">
                 <h3 data-aos="fade-up" class="subtitle is-5 is-muted">Iskustva</h3>

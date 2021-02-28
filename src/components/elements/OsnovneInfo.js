@@ -7,7 +7,7 @@ import React from "react";
 
 const OsnovneInfo = () => (
    
-<section  class="section section-feature-grey is-medium">
+<section  class="section section-feature-grey is-medium positionCenter">
     <div class="container">
         <div class="title-wrapper has-text-centered">
         <h3  class="subtitle is-5 is-muted">Dobrodošli u</h3>

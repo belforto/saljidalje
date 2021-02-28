@@ -52,7 +52,7 @@ class PopisRobe extends React.Component {
 
     render() {
         return (
-            <div>
+            <div class="positionCenter">
                 {this.state.articleLoading ? <div>load</div> :
                     <div>
                         <div class="title-wrapper has-text-centered">
