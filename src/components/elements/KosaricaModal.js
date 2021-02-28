@@ -95,6 +95,14 @@ class KosaricaModal extends Component {
           overlayClassName="Overlay"
         >
           <div className=" containerModal ">
+          <button
+              onClick={this.handleCloseModal}
+              class="button  is-rounded color4"
+              style={{    position: "relative",
+                right: "-249px"}}
+            >
+              Vrati se{" "}
+            </button>
             <div class="field">
               <label class="label">Tvoja Košarica</label>
 
@@ -111,15 +119,11 @@ class KosaricaModal extends Component {
             >
               Plaćanje
             </button>
-            <button
-              onClick={this.handleCloseModal}
-              class="button  is-rounded color4"
-            >
-              Vrati se{" "}
-            </button>
+           
             <button
               onClick={this.ocistiKosaricu}
               class="button  is-rounded color4"
+              style={{marginLeft: "44px"}}
             >
               Očisti Košaricu{" "}
             </button>

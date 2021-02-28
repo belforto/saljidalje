@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom';
 
 import Catalog from "../elements/Catalog";
 import SaljiDaljeNavbar from "../elements/SaljiDaljeNavbar";
+import PathBar from "../elements/PathBar";
 import PreporukeComponent from "../elements/PreporukeComponent"
 
 import placeHolderImg from "../elements/placeholder.jpg"
@@ -87,6 +88,7 @@ export default class ScreenDetaljnoDirekt extends React.Component {
             <div>
                 <div class="container" style={{    padding: "20px"}}>
                     <SaljiDaljeNavbar />
+                    <PathBar />
 
 
                     {this.state.loading ? <Catalog /> :
