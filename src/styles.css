@@ -331,3 +331,10 @@ h3 {
   background-color:rgba(33, 44, 55, 0.7);
   z-index: 22;
 }
+
+.overrideBulma h1{
+  all: revert
+}
+.overrideBulma h2{
+  all: revert
+}

@@ -19,6 +19,7 @@ import ScreenPovratRobe from "./components/dumb/ScreenPovratRobe";
 
 
 import ScreenONama from "./components/dumb/ScreenONama";
+import ScreenBlogPost from "./components/dumb/ScreenBlogPost";
 
 export default function SaljiDaljeApp() {
   return (
@@ -32,6 +33,7 @@ export default function SaljiDaljeApp() {
           <Route path="/detalji/:id" component={ScreenDetaljnoArtikl} />
           <Route path="/direkt/detalji/:id" component={ScreenDetaljnoDirekt} />
           <Route path="/category/:kategorija" component={ScreenKategorije} />
+          <Route path="/blog/:identifikator" component={ScreenBlogPost} />
           <Route path="/order/" component={ScreenNarudzba} />
           <Route path="/thankyou/" component={ScreenThankYouPage} />
           <Route path="/signup/" component={ScreenSignUp} />
