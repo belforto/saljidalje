@@ -91,7 +91,10 @@ class SaljiDaljeNavbar extends React.Component {
               </div>
             </div>
           </div>
-          <KosaricaModal/>
+          {
+!this.props.sakrijKosaricu &&   <KosaricaModal/>
+          }
+        
         </nav>
       
      

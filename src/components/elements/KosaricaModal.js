@@ -8,9 +8,9 @@ import { useStore } from "../../redux/zustand/zustand";
 
 
 
-export default function KosaricaModal() {
+export default function KosaricaModal({ update }) {
   const [showModal, setShowModal] = useState(false);
-  const [ukupno, setUkupno] = useState(null);
+  const [ukupno, setUkupno] = useState(update);
   let history = useHistory();
   // const artikalaUKosarici = useStore(state => state.artikalaUKosarici)
 
@@ -32,6 +32,7 @@ export default function KosaricaModal() {
     localStorage.removeItem("KOSARICAUKUPNO");
     localStorage.removeItem("KOSARICASIZE");
     // this.forceUpdate();
+    setUkupno(!ukupno)
   }
   const handleCloseModal=()=> {
     setShowModal(false)
@@ -76,13 +77,17 @@ export default function KosaricaModal() {
     <div >
     {!showModal && (
       <div className=" field kosaricaMobile" >
-        {/* {!!localStorage.getItem("KOSARICASIZE") && (
+        {!!localStorage.getItem("KOSARICASIZE") && (
           <div class="brojArtikalaUkosarici">
             <div class="brArtikalaText">0 
-            {localStorage.getItem("KOSARICASIZE")}
+            {
+              localStorage.getItem("KOSARICASIZE")
+              
+              }
+            {ukupno}
             </div>
           </div>
-        )} */}
+        )}
 
         <button
           onClick={handleOpenModal}

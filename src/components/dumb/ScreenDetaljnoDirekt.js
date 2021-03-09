@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom';
 
 import Catalog from "../elements/Catalog";
 import SaljiDaljeNavbar from "../elements/SaljiDaljeNavbar";
+import KosaricaModal from "../elements/KosaricaModal";
 import PathBar from "../elements/PathBar";
 import PreporukeComponent from "../elements/PreporukeComponent"
 
@@ -23,7 +24,8 @@ export default class ScreenDetaljnoDirekt extends React.Component {
         super(props);
         this.state = {
             loading: true,
-            photoLinks: []
+            photoLinks: [],
+            dodanoUkosaricu:false
         };
     }
 
@@ -85,6 +87,10 @@ export default class ScreenDetaljnoDirekt extends React.Component {
        
         localStorage.setItem('KOSARICA', JSON.stringify(KOSARICA));
         localStorage.setItem("KOSARICASIZE",KOSARICA.length)
+
+        this.setState({
+            dodanoUkosaricu: !this.state.dodanoUkosaricu
+          });
     }
 
     render() {
@@ -92,8 +98,9 @@ export default class ScreenDetaljnoDirekt extends React.Component {
         return (
             <div>
                 <div class="container" style={{    padding: "20px"}}>
-                    <SaljiDaljeNavbar />
+                    <SaljiDaljeNavbar sakrijKosaricu={true} />
                     <PathBar />
+                    <KosaricaModal update={this.state.dodanoUkosaricu} />
 
 
                     {this.state.loading ? <Catalog /> :

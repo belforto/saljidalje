@@ -8,6 +8,7 @@ import HeroComponent from "./elements/HeroComponent"
 import PopisRobe from "./elements/PopisRobe"
 import SaljiDaljeNavbar from "./elements/SaljiDaljeNavbar"
 import OsnovneInfo from "./elements/OsnovneInfo"
+import KosaricaModal from "./elements/KosaricaModal";
 import TestimonialComponent from "./elements/TestimonialComponent"
 import SpecialPromoComponent from "./elements/SpecialPromoComponent"
 import FooterSD from "./elements/Footer"
@@ -36,9 +37,9 @@ class MainScreenSaljiDalje extends React.Component {
     return (
       <div>
         <div class="container">
-          <SaljiDaljeNavbar />
-
-
+          <SaljiDaljeNavbar  sakrijKosaricu={false} />
+      
+      
           <HeroComponent />
           <SpecialPromoComponent />
           <OsnovneInfo />
