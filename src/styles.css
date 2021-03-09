@@ -250,6 +250,7 @@ h3 {
     width: 200px;
     
     
+    
   }
 
   
@@ -337,4 +338,21 @@ h3 {
 }
 .overrideBulma h2{
   all: revert
+}
+
+.artiklIzListe{
+  /* background-color: #36d6e7; */
+  /* border: 1px solid red; */
+}
+
+.artiklCijena{
+  margin-top: 1em;
+  text-align: center;
+  background-color:#DBA897;
+  color:#fff9f7;
+}
+
+.artiklCijena p{
+  color:gray;
+  text-decoration-line: line-through
 }

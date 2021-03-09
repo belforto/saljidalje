@@ -13,6 +13,8 @@ import PreporukeComponent from "../elements/PreporukeComponent"
 
 import placeHolderImg from "../elements/placeholder.jpg"
 
+import { useStore } from "../../redux/zustand/zustand";
+
 
 
 
@@ -32,6 +34,9 @@ export default class ScreenDetaljnoDirekt extends React.Component {
     }
 
     pullArtiklFromDB = async () => {
+
+        // const artikalaUKosarici = useStore(state => state.artikalaUKosarici)
+        // console.log("zust",artikalaUKosarici)
 
         const API_ENDPOINT = "https://webhooks.mongodb-stitch.com/api/client/v2.0/app/saljidaljeserver-krkzo/service/api/incoming_webhook/fetchByID?identifikator="
         var artikl = "3.3.2020-odjeca-hoodie22-xxxxx"

@@ -22,7 +22,7 @@ class Artikli extends React.Component {
       function() {
         this.setState({ loading: false });
       }.bind(this),
-      1000
+      300
     );
     console.log(this.props.artikli, "from fetch---------------");
 
@@ -39,7 +39,7 @@ class Artikli extends React.Component {
         } catch (err) {
           console.log(err, "NO SCROLLMEMORY ELEMENT");
         }
-      }, 2000);
+      }, 1000);
     }
 
    
@@ -89,10 +89,12 @@ class Artikli extends React.Component {
                 data-testid="listaArtikala"
                 class="columns is-multiline is-mobile  is-centered"
               >
-                {this.props.artikli.map((item, i) => (
+                {this.props.artikli.map((item, i) =>  { 
+                  // console.log(item, "itemm");
+                 return(
                   <div
                     key={i}
-                    class="column is-half-mobile is-one-quarter-widescreen"
+                    class="column is-half-mobile is-one-quarter-widescreen artiklIzListe"
                     onClick={()=> localStorage.setItem("SCROLLMEMORY","#/saljidalje/direkt/detalji/"+ item.identifikator)}
                   >
                     <Link
@@ -111,9 +113,15 @@ class Artikli extends React.Component {
                         effect="blur"
                         src={item.photoLinks[0]}
                       />
+
+                      <div class="artiklCijena">
+                        {item.cijena}
+
+                        {/* <p>{true ?  item.cijena.match(/\d/g):null} </p> */}
+                      </div>
                     </Link>
                   </div>
-                ))}
+                )})}
               </div>
             </section>
           </div>

@@ -4,6 +4,7 @@ import PathBar from "../elements/PathBar";
 import FooterSD from "../elements/Footer";
 import SocialMediaShare from "../elements/SocialMediaShare";
 import WebshopPromoComponent from "../elements/WebshopPromoComponent";
+import WebshopFacebookPromoComponent from "../elements/WebshopFacebookPromoComponent";
 import { useState, useEffect } from "react";
 import marked from "marked";
 import sanitizeHtml from "sanitize-html";
@@ -89,6 +90,7 @@ export default function ScreenBlogPost() {
         {!!text &&  <SocialMediaShare />}
        
         <WebshopPromoComponent />
+        {/* <WebshopFacebookPromoComponent /> */}
       </div>
 
       <FooterSD />

@@ -105,7 +105,7 @@ class ScreenKategorije extends React.Component {
                         <h1 class="katBox title is-1 textOrange" >{this.state.kategorijaIzUrl.toUpperCase()}</h1>
                     </div>
                     {this.state.articleLoading ? <Catalog /> :
-                        <div class="columns  is mobile ">
+                        <div class="columns  is mobile " style={{    marginTop: "1em"}}>
 
                             <Artikli artikli={this.props.apiResults.filter(this.filterApiResults)} />
                         </div>

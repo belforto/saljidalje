@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.276e8c66.chunk.css",
-    "main.js": "/static/js/main.82229414.chunk.js",
-    "main.js.map": "/static/js/main.82229414.chunk.js.map",
+    "main.css": "/static/css/main.58e71c6c.chunk.css",
+    "main.js": "/static/js/main.d5964c9b.chunk.js",
+    "main.js.map": "/static/js/main.d5964c9b.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.7beda545.js",
     "runtime-main.js.map": "/static/js/runtime-main.7beda545.js.map",
-    "static/css/2.ce034d09.chunk.css": "/static/css/2.ce034d09.chunk.css",
-    "static/js/2.7dc328ad.chunk.js": "/static/js/2.7dc328ad.chunk.js",
-    "static/js/2.7dc328ad.chunk.js.map": "/static/js/2.7dc328ad.chunk.js.map",
+    "static/css/2.b11f732d.chunk.css": "/static/css/2.b11f732d.chunk.css",
+    "static/js/2.ebfb48bc.chunk.js": "/static/js/2.ebfb48bc.chunk.js",
+    "static/js/2.ebfb48bc.chunk.js.map": "/static/js/2.ebfb48bc.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.54df4854ebb275c561ca9da43baebce9.js": "/precache-manifest.54df4854ebb275c561ca9da43baebce9.js",
+    "precache-manifest.285964738e3ffcc91f1cfd957d95c68d.js": "/precache-manifest.285964738e3ffcc91f1cfd957d95c68d.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/2.ce034d09.chunk.css.map": "/static/css/2.ce034d09.chunk.css.map",
-    "static/css/main.276e8c66.chunk.css.map": "/static/css/main.276e8c66.chunk.css.map",
+    "static/css/2.b11f732d.chunk.css.map": "/static/css/2.b11f732d.chunk.css.map",
+    "static/css/main.58e71c6c.chunk.css.map": "/static/css/main.58e71c6c.chunk.css.map",
     "static/media/10.jpg": "/static/media/10.0204d145.jpg",
     "static/media/12.jpg": "/static/media/12.8edc1316.jpg",
     "static/media/13.jpg": "/static/media/13.8cbc7454.jpg",
@@ -28,13 +28,14 @@
     "static/media/predlosci.jpg": "/static/media/predlosci.4525fa16.jpg",
     "static/media/snowflake.svg": "/static/media/snowflake.1ebe94d5.svg",
     "static/media/styles.css": "/static/media/wall.8ad70028.png",
+    "static/media/webshop-zaviri.png": "/static/media/webshop-zaviri.7e157204.png",
     "static/media/xmas1.png": "/static/media/xmas1.10b92ea9.png"
   },
   "entrypoints": [
     "static/js/runtime-main.7beda545.js",
-    "static/css/2.ce034d09.chunk.css",
-    "static/js/2.7dc328ad.chunk.js",
-    "static/css/main.276e8c66.chunk.css",
-    "static/js/main.82229414.chunk.js"
+    "static/css/2.b11f732d.chunk.css",
+    "static/js/2.ebfb48bc.chunk.js",
+    "static/css/main.58e71c6c.chunk.css",
+    "static/js/main.d5964c9b.chunk.js"
   ]
 }
