@@ -5,30 +5,36 @@ import CookieNotice from '@mirzalikic/react-cookie-notice';
 
 export default function GDPR() {
 
-  //  consentGrantedAll=() =>{
-  //   console.log("gtm update granted",isConsentGranted)
-  //   gtag('consent', 'update', {
-  //     'ad_storage': 'granted',
-  //     'analytics_storage': 'granted',
-  //     'functionality_storage': 'granted',
-  //   'personalization_storage': 'granted',
-  //   'security_storage': 'granted'
-  //   });
-  // }
+  const localConsentUpdate=() =>{
+    
+
+    let script = document.getElementById("gtmCustomFunctionUpdate"); 
+    console.log("local cons",script)
+    if(script){
+      window.consentGranted()
+      window.location.reload(true);
+     // anl_cookie_event
+    }
+   
+   
+    
+  }
   return (
     <div>
      <CookieNotice
     onSave={(cookies) => {
-        console.log(cookies);
-        // consentGrantedAll();
+        console.log(cookies,"save");
+         localConsentUpdate();
     }}
     onInit={(cookies) => {
-        console.log(cookies);
+        console.log(cookies,"init");
+        // localConsentUpdate();
     }}
     acceptAllButtonText="Accept"
     cookiePrefix="my-cookie-"
     cookies={[
         { name: 'necessary', checked: true, editable: false, default: true, title: 'Essential', text: 'Essential cookies enable basic functions and are necessary for the proper function of the website. The website cannot function properly without these cookies.' },
+        { name: 'analytics', checked: false, editable: true, title: 'Marketing', text: 'Marketing cookies are used to track visitors across websites. They are used by third-party advertisers or publishers to display personalized ads.' },
         { name: 'marketing', checked: false, editable: true, title: 'Marketing', text: 'Marketing cookies are used to track visitors across websites. They are used by third-party advertisers or publishers to display personalized ads.' },
         { name: 'test', checked: false, editable: true, title: 'Title', text: 'Lorem ipsum dolor sit amet.' }
     ]}>

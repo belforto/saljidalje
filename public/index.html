@@ -1,15 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
-
-
-
-
-     <!-- Start Single Page Apps for GitHub Pages -->
-     <script type="text/javascript">
-
+  <head>
+    <!-- Start Single Page Apps for GitHub Pages -->
+    <script type="text/javascript">
       // Single Page Apps for GitHub Pages
       // https://github.com/rafrex/spa-github-pages
       // Copyright (c) 2016 Rafael Pedicini, licensed under the MIT License
@@ -44,71 +37,82 @@
     <!-- End Single Page Apps for GitHub Pages -->
 
     <script>
-    
-window.dataLayer = window.dataLayer || [];
-function gtag() {
-    dataLayer.push(arguments)
-}
-
-gtag("consent", "default", {
-    // ad_storage: "denied",
-    // analytics_storage: "granted",
-    // wait_for_update: 2000 // milliseconds
-    'ad_storage': 'denied',
-    'analytics_storage': 'denied',
-    'functionality_storage': 'denied',
-    'personalization_storage': 'denied',
-    'security_storage': 'denied'
-});
-
-
-  // function consentGrantedAll() {
-  //   console.log("gtm update granted")
-  //   gtag('consent', 'update', {
-  //     'ad_storage': 'granted',
-  //     'analytics_storage': 'granted',
-  //     'functionality_storage': 'granted',
-  //   'personalization_storage': 'granted',
-  //   'security_storage': 'granted'
-  //   });
-  // }
-
-
-gtag("set", "ads_data_redaction", true);
-console.log("gtm is great");
-
-(function(w, d, s, l, i) {
-    w[l] = w[l] || [];
-    w[l].push({
-        'gtm.start': new Date().getTime(),
-        event: 'gtm.js'
-    });
-    var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = l != 'dataLayer' ? '&l=' + l : '';
-    j.async = true;
-    j.src =
-        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-    f.parentNode.insertBefore(j, f);
-})(window, document, 'script', 'dataLayer', 'GTM-N47NT6J'); 
-
+      function getCookie(cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(";");
+        for (var i = 0; i < ca.length; i++) {
+          var c = ca[i];
+          while (c.charAt(0) == " ") {
+            c = c.substring(1);
+          }
+          if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+          }
+        }
+        return undefined;
+      }
     </script>
 
+    <script id="gtmScriptMain">
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
 
+      gtag("consent", "default", {
+        // ad_storage: "denied",
+        // analytics_storage: "granted",
+         wait_for_update: 5000, // milliseconds
+        ad_storage: ( getCookie("my-cookie-marketing")&&"granted") || "denied",
+        analytics_storage: ( getCookie("my-cookie-analytics")&&"granted") || "denied",
+        functionality_storage: "denied",
+        personalization_storage: "denied",
+        security_storage: "denied"
+      });
 
+      gtag("set", "ads_data_redaction", true);
+      // gtag('set', 'url_passthrough', true);
+      console.log("gtm is great");
 
-	<meta charset="utf-8">
+      (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js"
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-N47NT6J");
+    </script>
 
-  
-  <meta name="viewport" content="width=device-width">
-	<meta name="theme-color" content="#000000">
-	<!--
+    <script id="gtmCustomFunctionUpdate">
+      function consentGranted() {
+        console.log("consGranted yeaaah");
+        gtag("consent", "update", {
+          ad_storage: "granted",
+          analytics_storage: "granted",
+          functionality_storage: "granted",
+          personalization_storage: "granted",
+          security_storage: "granted"
+        });
+      }
+    </script>
+
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width" />
+    <meta name="theme-color" content="#000000" />
+    <!--
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
     -->
-	<link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-	<link rel="shortcut icon" id="favicon" href="icon.png">
-	<!--
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="shortcut icon" id="favicon" href="icon.png" />
+    <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -117,29 +121,37 @@ console.log("gtm is great");
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   
-    
 
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <link defer href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
-    <link defer href="https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap" rel="stylesheet">
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+    ></script>
+
+    <link
+      defer
+      href="https://fonts.googleapis.com/css?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      defer
+      href="https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap"
+      rel="stylesheet"
+    />
     <!-- <link defer rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> -->
     <!-- <link  defer rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" /> -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-   
-    
-    <title>Salji Dalje Online Second Hand Shop</title>
-</head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-<body >
-	<noscript>
-		You need to enable JavaScript to run this app.
-	</noscript>
-	<div id="root"></div>
-	<!--
+    <title>Salji Dalje Online Second Hand Shop</title>
+  </head>
+
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+    <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -149,6 +161,5 @@ console.log("gtm is great");
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-</body>
-
+  </body>
 </html>
