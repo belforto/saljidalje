@@ -1,13 +1,26 @@
 import React from 'react'
 import CookieNotice from '@mirzalikic/react-cookie-notice';
 
+
+
 export default function GDPR() {
+
+  //  consentGrantedAll=() =>{
+  //   console.log("gtm update granted",isConsentGranted)
+  //   gtag('consent', 'update', {
+  //     'ad_storage': 'granted',
+  //     'analytics_storage': 'granted',
+  //     'functionality_storage': 'granted',
+  //   'personalization_storage': 'granted',
+  //   'security_storage': 'granted'
+  //   });
+  // }
   return (
     <div>
      <CookieNotice
     onSave={(cookies) => {
         console.log(cookies);
-        consentGrantedAll();
+        // consentGrantedAll();
     }}
     onInit={(cookies) => {
         console.log(cookies);
