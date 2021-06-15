@@ -54,12 +54,25 @@ gtag("consent", "default", {
     // ad_storage: "denied",
     // analytics_storage: "granted",
     // wait_for_update: 2000 // milliseconds
-    'ad_storage': 'granted',
-    'analytics_storage': 'granted',
-    'functionality_storage': 'granted',
+    'ad_storage': 'denied',
+    'analytics_storage': 'denied',
+    'functionality_storage': 'denied',
+    'personalization_storage': 'denied',
+    'security_storage': 'denied'
+});
+
+
+  function consentGrantedAll() {
+    console.log("gtm update granted")
+    gtag('consent', 'update', {
+      'ad_storage': 'granted',
+      'analytics_storage': 'granted',
+      'functionality_storage': 'granted',
     'personalization_storage': 'granted',
     'security_storage': 'granted'
-});
+    });
+  }
+
 
 gtag("set", "ads_data_redaction", true);
 console.log("gtm is great");

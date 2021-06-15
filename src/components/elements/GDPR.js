@@ -7,6 +7,7 @@ export default function GDPR() {
      <CookieNotice
     onSave={(cookies) => {
         console.log(cookies);
+        consentGrantedAll();
     }}
     onInit={(cookies) => {
         console.log(cookies);
