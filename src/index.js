@@ -7,10 +7,10 @@ import store from "./redux/store";
 import SaljiDaljeApp from "./SaljiDaljeApp";
 import TagManager from 'react-gtm-module'
 
-const tagManagerArgs = {
-  gtmId: 'GTM-N47NT6J'
-}
-TagManager.initialize(tagManagerArgs)
+// const tagManagerArgs = {
+//   gtmId: 'GTM-N47NT6J'
+// }
+// TagManager.initialize(tagManagerArgs)
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(

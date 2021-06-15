@@ -44,39 +44,11 @@ class Artikli extends React.Component {
 
    
 
-    //var item = document.querySelectorAll("h6[data-testid='testfooter']");
-    // console.log("element was found"+item[0])
-    /*
-        const item = document.querySelector(
-            ".restore-" + this.props.location.state
-          );
-          if (item) {
-            item.scrollIntoView();
-          }
-          */
-
-   // window.addEventListener("click", this.handleScroll);
+   
   }
 
-  componentWillUnmount() {
- //   window.removeEventListener("click", null);
-  }
-  // handleScroll = event => {
-  //   console.log("***********handle scroll")
-  //   var href = event.path[2].hash;
-
-  //   console.log(href, "CLICKKK");
-  //   localStorage.setItem("SCROLLMEMORY", href);
-
-  //   // console.log(111, document.getElementsByTagName("a[href='#/saljidalje/detalji/5-5-2020-Handmade-BabyBlue-10007738']"))
-  // };
-
-  /*
-    saveScrollPosition() {
-      var yPosition = window.pageYOffset;
-      XLoacalStore.set("yPosition", yPosition)
-    }
-  */
+ 
+  
   render() {
     return (
       <div>

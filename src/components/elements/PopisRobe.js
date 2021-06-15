@@ -5,6 +5,7 @@ import { connect } from "react-redux";
 import { fetchArticles } from "../../redux/actions";
 
 import Artikli from "./Artikli";
+import SVGKateg from "./SVGKateg";
 import { Link } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
@@ -70,7 +71,7 @@ class PopisRobe extends React.Component {
                                     pathname: '/category/odjeca',
                                     
                                 }} >
-                                    <LazyLoadImage alt="bla" effect="opacity" src={odjeca} />
+                                    <SVGKateg kategorija="ODJEĆA" />
                                 </Link>
                             </div>
 
@@ -79,7 +80,7 @@ class PopisRobe extends React.Component {
                                     pathname: '/category/obuca',
                                     
                                 }} >
-                                    <LazyLoadImage alt="bla" effect="opacity" src={obuca} />
+                                    <SVGKateg kategorija="OBUĆA" />
                                 </Link>
                             </div>
 
@@ -88,7 +89,7 @@ class PopisRobe extends React.Component {
                                     pathname: '/category/baby',
                                     
                                 }} >
-                                    <LazyLoadImage alt="bla" effect="opacity" src={kids} />
+                                     <SVGKateg kategorija="DJECA" />
                                 </Link>
                             </div>
                             <div class="column is-half-mobile is-one-quarter-widescreen">
@@ -96,14 +97,19 @@ class PopisRobe extends React.Component {
                                     pathname: '/category/handmade',
                                     
                                 }} >
-                                    <LazyLoadImage alt="bla" effect="opacity" src={handmade} />
+                                     <SVGKateg kategorija="#ECOBAG" />
                                 </Link>
                             </div>
 
-                            <h2 class="title is-2">NAJNOVIJE</h2>
+                            
 
 
                         </div>
+                        <div class="title-wrapper has-text-centered">
+                        <h2 class="title is-2">NAJNOVIJE</h2>
+                        </div>
+                        <br/>
+                        <br/>
 
                         <Artikli artikli={this.props.apiResults.filter(this.filterApiResults)} />
                     </div>

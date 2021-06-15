@@ -5,6 +5,7 @@
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
+    "@mirzalikic/react-cookie-notice": "^1.0.2",
     "aos": "^2.3.4",
     "bulma": "^0.8.0",
     "classnames": "2.2.6",

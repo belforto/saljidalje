@@ -357,3 +357,10 @@ h3 {
   color:gray;
   text-decoration-line: line-through
 }
+
+svg:hover {
+  fill: #009966;
+}
+.kategBoxes{
+  margin-bottom: 2em;
+}

@@ -3,6 +3,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import EmailService from "./EmailService"
+import GDPR from "./GDPR"
 
 
 export default class FooterSD extends React.Component {
@@ -52,7 +53,8 @@ export default class FooterSD extends React.Component {
   <path fill="#FFFFFF" fill-opacity="1" d="M0,224L60,234.7C120,245,240,267,360,240C480,213,600,139,720,138.7C840,139,960,213,1080,213.3C1200,213,1320,139,1380,101.3L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
 </svg>
         <div class=" content has-text-centered has-text-white">
-        <div class="container">
+        <div class="container" style={{    marginLeft: "2em",
+    marginRight: "2em"}}>
           <div class="columns">
             <div class="column">
               <h6 data-aos="fade-up" data-testid="testfooter">Postani dio SaljiDalje Family</h6>
@@ -100,6 +102,7 @@ export default class FooterSD extends React.Component {
           <h5>Copyright SaljiDalje 2020</h5>
         </div>
         </div>
+        <GDPR />
       </footer>
     )
   }
