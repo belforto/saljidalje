@@ -102,7 +102,7 @@ export default class FooterSD extends React.Component {
           <h5>Copyright SaljiDalje 2020</h5>
         </div>
         </div>
-        <GDPR />
+        
       </footer>
     )
   }

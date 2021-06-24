@@ -20,6 +20,7 @@ import ScreenPovratRobe from "./components/dumb/ScreenPovratRobe";
 
 import ScreenONama from "./components/dumb/ScreenONama";
 import ScreenBlogPost from "./components/dumb/ScreenBlogPost";
+import GDPR from "./components/elements/GDPR"
 
 
 export default function SaljiDaljeApp() {
@@ -28,7 +29,7 @@ export default function SaljiDaljeApp() {
   return (
     <Router basename="/saljidalje">
 
-
+<GDPR />
 
       <div   >
    

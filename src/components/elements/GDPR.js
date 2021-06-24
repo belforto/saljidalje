@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import CookieNotice from '@mirzalikic/react-cookie-notice';
-
-
+import { useLocation,  } from 'react-router-dom'; 
 
 export default function GDPR() {
+  let location = useLocation();
 
   const localConsentUpdate=() =>{
     
@@ -19,6 +19,13 @@ export default function GDPR() {
    
     
   }
+
+  useEffect(() => {
+    window.consentGranted()
+  }, [location])
+
+ 
+
   return (
     <div>
      <CookieNotice
