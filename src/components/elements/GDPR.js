@@ -30,16 +30,16 @@ export default function GDPR() {
         console.log(cookies,"init");
         // localConsentUpdate();
     }}
-    acceptAllButtonText="Accept"
+    acceptAllButtonText="Prihvati Kolačiće"
     cookiePrefix="my-cookie-"
     cookies={[
-        { name: 'necessary', checked: true, editable: false, default: true, title: 'Essential', text: 'Essential cookies enable basic functions and are necessary for the proper function of the website. The website cannot function properly without these cookies.' },
-        { name: 'analytics', checked: false, editable: true, title: 'Marketing', text: 'Marketing cookies are used to track visitors across websites. They are used by third-party advertisers or publishers to display personalized ads.' },
-        { name: 'marketing', checked: false, editable: true, title: 'Marketing', text: 'Marketing cookies are used to track visitors across websites. They are used by third-party advertisers or publishers to display personalized ads.' },
-        { name: 'test', checked: false, editable: true, title: 'Title', text: 'Lorem ipsum dolor sit amet.' }
+         { name: 'necessary', checked: true, editable: false, default: true, title: 'Osnovni', text: 'Osnovni kolačići su potrebni za osnovno funkcioniranje web stranice. Web stranica ne može funkcionirati ispravno bez tih kolačića.' },
+        { name: 'analytics', checked: false, editable: true, title: 'Analitika', text: 'Analitički kolačići nam omogućuju uvid u posjete web stranici. Pomoću njih znamo koliko je korisnika bilo na našoj stranici, koliko dugo su ostali i koji dijelovi stranice su im bili najzanimljivniji.' },
+        { name: 'marketing', checked: false, editable: true, title: 'Marketing', text: 'Marketinški kolačići koriste se kako bi pratili posjetitelje na stranici. Koriste ih dobavljači 3. strane oglašivači ili izdavaći kako bi prikazali korisnicima personalizirane reklame.' },
+        // { name: 'test', checked: false, editable: true, title: 'Title', text: 'Lorem ipsum dolor sit amet.' }
     ]}>
-    <h3>This website uses cookies</h3>
-    <p>We use cookies that help the website to function and also to track how you interact with it. We will only use the cookies if you consent to it by clicking on "Accept all cookies". You can also manage individual cookie preferences.</p>
+    <h3>Ova web stranica koristi kolačiće.</h3>
+    <p> Koristimo kolačiće kako bi poboljšali funkcioniranje web stranice i kako bi pratili interakciju s njima. Koristit ćemo kolačiće samo ako kliknete na "Prihvati Kolačiće". Također možete individualno namještati korištenje kolačića.</p>
 </CookieNotice>
     </div>
   )

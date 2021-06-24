@@ -60,9 +60,8 @@
       }
 
       gtag("consent", "default", {
-        // ad_storage: "denied",
-        // analytics_storage: "granted",
-         wait_for_update: 5000, // milliseconds
+        
+         wait_for_update: 5000, // wait 5 s before we grab cookies
         ad_storage: ( getCookie("my-cookie-marketing")&&"granted") || "denied",
         analytics_storage: ( getCookie("my-cookie-analytics")&&"granted") || "denied",
         functionality_storage: "denied",
