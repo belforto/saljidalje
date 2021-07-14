@@ -280,12 +280,6 @@ h3 {
 .removeItemFromKosarica{
   cursor:pointer;
 }
-.navbarZindex{
-  position: relative;
-  z-index: -1;
-
-}
-
 
 .brojArtikalaUkosarici{
   
