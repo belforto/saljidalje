@@ -25,7 +25,7 @@ class SaljiDaljeNavbar extends React.Component {
   render() {
     return (
       <div>
-        <nav class="navbar positionCenter" role="navigation" aria-label="main navigation">
+        <nav class="navbar positionCenter navbarZindex" role="navigation" aria-label="main navigation">
           <div className="navbar-brand text-center">
             <Link to="/">
               <img src={logo} width="152" height="108" />
