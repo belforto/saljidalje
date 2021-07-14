@@ -273,8 +273,12 @@ h3 {
 }
 
 .smallImgKosarica{
-  width: 9vmin;
-  border-radius: 50%;
+  width: 7vmin;
+  border-radius: 25%;
+}
+
+.removeItemFromKosarica{
+  cursor:pointer;
 }
 
 .brojArtikalaUkosarici{

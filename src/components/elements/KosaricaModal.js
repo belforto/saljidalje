@@ -38,6 +38,25 @@ export default function KosaricaModal({ update }) {
     setShowModal(false)
   }
 
+  function useForceUpdate(){
+    const [value, setValue] = useState(0); // integer state
+    return () => setValue(value => value + 1); // update the state to force render
+}
+const forceUpdate = useForceUpdate();
+
+  const makniTajArtiklIzKosarice=(identifikatorToRemove)=>{
+    
+    let KOSARICA = JSON.parse(localStorage.getItem("KOSARICA"));
+    
+   let updatedKosarica= KOSARICA.filter((x,i)=> i!==identifikatorToRemove)
+    console.log("maknut cu",identifikatorToRemove,updatedKosarica)
+    localStorage.setItem('KOSARICA', JSON.stringify(updatedKosarica));
+    localStorage.setItem("KOSARICASIZE",updatedKosarica.length)
+
+      //  this.forceUpdate();
+     
+      forceUpdate();
+  }
  
 
   const displayKosaricu=()=> {
@@ -54,13 +73,15 @@ export default function KosaricaModal({ update }) {
     localStorage.setItem("KOSARICAUKUPNO", UKUPNO);
     // setUkupno(UKUPNO);
 
-    return KOSARICA.map(x => {
+    return KOSARICA.map((x,index) => {
       return (
         <div>
           <div>
             <img class="smallImgKosarica" src={x.slika} />
             {"  "}
             <span>{x.naslov + " - " + x.cijena}</span>
+            <span class="removeItemFromKosarica" onClick={()=>makniTajArtiklIzKosarice(index)}>    {"     "}
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" class="ionicon" viewBox="0 0 512 512"><title>Close Circle</title><path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M320 320L192 192M192 320l128-128"/></svg></span>
           </div>
         </div>
       );
@@ -79,7 +100,7 @@ export default function KosaricaModal({ update }) {
       <div className=" field kosaricaMobile" >
         {!!localStorage.getItem("KOSARICASIZE") && (
           <div class="brojArtikalaUkosarici">
-            <div class="brArtikalaText">0 
+            <div class="brArtikalaText">
             {
               localStorage.getItem("KOSARICASIZE")
               
