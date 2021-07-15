@@ -12,6 +12,7 @@ import PreporukeComponent from "../elements/PreporukeComponent"
 import { Link } from 'react-router-dom';
 
 
+import {IME_FIRME,ADRESA_FIRME,OIB_FIRME} from "../elements/podaciOFirmi"
 
 
 
@@ -40,7 +41,7 @@ export default class ScreenTerms extends React.Component {
 <div class="entry-content">
 <p><strong>OPĆI UVJETI</strong><strong>&nbsp;POSLOVANJA</strong></p>
 <p>Općim uvjetima uređuju se odnosi između Kupca i Trgovca vezano uz uvjete i način naručivanja proizvoda, cijene proizvoda, uvjete i načine plaćanja, uvjete jamstva za ispravnost prodane stvari, prava Kupca na pisani prigovor na proizvode i usluge Trgovca, pravo na raskid ugovora, dostave proizvoda te ostalih usluga koje Trgovac nudi, za&scaron;tite osobnih i drugih podataka i ostala pitanja važna za sklapanje ugovora o kupoprodaji putem Interneta. &nbsp;</p>
-<p>Uvjeti poslovanja dru&scaron;tva SaljiDalje(u daljnjem tekstu Trgovac) sastavljeni su u skladu sa Zakonom o za&scaron;titi potro&scaron;ača (N.N. 41/14; 110/015; 14/19), glava III. &ndash; Sklapanje ugovora izvan poslovnih prostorija i ugovora na daljinu te predstavljaju prethodnu obavijest u smislu članka 43. ZZP, Zakonom o elektroničkoj trgovini, Zakon o obveznim odnosima te ostalim važećim propisima Republike Hrvatske.</p>
+<p>Uvjeti poslovanja dru&scaron;tva {IME_FIRME}(u daljnjem tekstu Trgovac) sastavljeni su u skladu sa Zakonom o za&scaron;titi potro&scaron;ača (N.N. 41/14; 110/015; 14/19), glava III. &ndash; Sklapanje ugovora izvan poslovnih prostorija i ugovora na daljinu te predstavljaju prethodnu obavijest u smislu članka 43. ZZP, Zakonom o elektroničkoj trgovini, Zakon o obveznim odnosima te ostalim važećim propisima Republike Hrvatske.</p>
 <p>Trgovac zadržava pravo izmjene Uvjeta i odredbi u bilo kojem trenutku. Sve izmjene bit će objavljene putem web stranice Trgovca te će stupiti na snagu u trenutku objave istih na internetskim stranicama. Bilo kakve izmjene Uvjeta primjenjivat će se na kupnje izvr&scaron;ene nakon objavljivanja tih izmjena.<br />&nbsp;Kupac je dužan provjeriti važeće Uvjete prije svake kupnje.</p>
 <p>Narudžbom proizvoda Kupac potvrđuje prihvaćanje uvjeta poslovanja.</p>
 <p>Opći uvjeti bit će dostavljeni kupcu kao sadržaj odnosno prilog email kojim se potvrđuje da je ugovor sklopljen.</p>
@@ -71,7 +72,7 @@ export default class ScreenTerms extends React.Component {
 <p>Ukoliko je proizvod rasprodan, narudžba će se otkazati i kupac će dobiti povrat sredstava.</p>
 <p>&nbsp;</p>
 <p><strong>DOSTAVA</strong></p>
-<p>Dostava se vr&scaron;i putem Hrvatske po&scaron;te i cijena po&scaron;tarine za područje Hrvatske je 13 kn.</p>
+<p>Dostava se vr&scaron;i putem Hrvatske po&scaron;te i cijena po&scaron;tarine za područje Hrvatske je 30 kn.</p>
 <p>Za posebne usluge kao prioritetno slanje ili slanje HP Express-om se cijena obračunava individualno u narudžbi.</p>
 <p>Kupac plaća ukupan iznos cijene proizvoda i cijene po&scaron;tarine.</p>
 <p>Dostava se vr&scaron;i unutar 3 do 7 radnih dana.</p>
@@ -110,7 +111,7 @@ export default class ScreenTerms extends React.Component {
 <p>Posebnom regulativom Europske unije, od 15.12.2016. diljem cijele EU, sporove vezane uz online kupnju biti će moguće rije&scaron;iti putem ODR platforme. To znači da ukoliko naiđete na problem tijekom online kupovine unutar EU (neispravan proizvod, nemogućnost zamjene itd) svoj prigovor možete na brzi i jednostavan način podnijeti putem te platforme.</p>
 <p>Platformu mogu koristiti i potro&scaron;ači i trgovci, a prigovor je moguće podnijeti na bilo kojem od 23 službena jezika EU.</p>
 <p><strong>AUTORSKA PRAVA</strong></p>
-<p>Autorska prava su u cijelosti zadržana. Cjelokupan sadržaj i formati na stranicama SaljiDalje, kako web stranici tako i dru&scaron;tvenim mrežama su vlasni&scaron;tvo SaljiDalje. Sav sadržaj koji se nalazi na na&scaron;im stranicama, ukoliko nije u osobne svrhe, ne smije se bez na&scaron;eg dopu&scaron;tenja koristiti niti dalje ustupati trećim strankama. Autorska prava u bilo kojem skinutom materijalu nisu prenosiva na Vas u slučaju bilo kakvog skidanja ili kopiranja. Nije dozvoljen reproducirati, objavljivati, distribuirati, pokazivati, modificirati, kreirati derivirani rad, prodavati, sudjelovati u prodaji ili eksportirati u nijednom slučaju, u cjelini ili u dijelovima, bilo koji dio sadržaja, stranica.</p>
+<p>Autorska prava su u cijelosti zadržana. Cjelokupan sadržaj i formati na stranicama SaljiDalje.eu, kako web stranici tako i dru&scaron;tvenim mrežama su vlasni&scaron;tvo SaljiDalje. Sav sadržaj koji se nalazi na na&scaron;im stranicama, ukoliko nije u osobne svrhe, ne smije se bez na&scaron;eg dopu&scaron;tenja koristiti niti dalje ustupati trećim strankama. Autorska prava u bilo kojem skinutom materijalu nisu prenosiva na Vas u slučaju bilo kakvog skidanja ili kopiranja. Nije dozvoljen reproducirati, objavljivati, distribuirati, pokazivati, modificirati, kreirati derivirani rad, prodavati, sudjelovati u prodaji ili eksportirati u nijednom slučaju, u cjelini ili u dijelovima, bilo koji dio sadržaja, stranica.</p>
 <p><strong>ZA&Scaron;TITA OSOBNIH PODATAKA</strong></p>
 <p>Obavezujemo se pružati za&scaron;titu osobnih podataka Kupaca, na način da prikupljamo samo nužne, osnovne podatke o kupcima koji su nužni za ispunjenje na&scaron;ih obveza.</p>
 <p>Svi se podaci o korisnicima strogo čuvaju i dostupni su samo djelatnicima kojima su ti podaci nužni za ispunjenje na&scaron;ih obveza.</p>

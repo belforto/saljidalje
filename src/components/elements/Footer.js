@@ -4,6 +4,7 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import EmailService from "./EmailService"
 import GDPR from "./GDPR"
+import {IME_FIRME,ADRESA_FIRME,OIB_FIRME} from "./podaciOFirmi"
 
 
 export default class FooterSD extends React.Component {
@@ -99,6 +100,9 @@ export default class FooterSD extends React.Component {
             </p>
             </div>
           </div>
+          <p>{IME_FIRME}</p>
+          <p>{ADRESA_FIRME}</p>
+          <p>{OIB_FIRME}</p>
           <h5>Copyright SaljiDalje 2020</h5>
         </div>
         </div>
